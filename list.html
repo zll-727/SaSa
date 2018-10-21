@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="css/xiangqing.css"/>
+		<link rel="stylesheet" type="text/css" href="css/list.css"/>
+		
+		<script src="js/jquery-1.11.3.js"></script>
+		<script src="js/require.js" data-main="js/index"></script>
+	</head>
+	<body>
+		
+		<ul id="floor" >
+				<li>
+					<a href="javascript:;"><em>&#xe60b;</em></a>
+					<span id="f_user">我的账户</span>
+				</li>
+				<li id="f_sp">
+					<a href="javascript:;" style="color:#fff">
+						
+						<div id="f_spw">
+							<em>&#xe60f;</em>
+							购物车
+							<div id="div0">0</div>
+						</div>
+					</a>
+					
+				</li>
+				<li>
+					<a href="javascript:;"><em>&#xe613;</em></a>
+					<span id="f_hert">我的收藏</span>
+				</li>
+				<li>
+					<a href="javascript:;"><em>&#xe60b;</em></a>
+					<span id="f_trap">浏览记录</span>
+				</li>
+				<li id="kefu">
+					<a href="javascript:;"><em>&#xe60a;</em></a>
+					<span id="f_ser">线上客服</span>
+				</li>
+				<li>
+					<a href="javascript:;"><em>&#xe60b;</em></a>
+					<span id="f_code">
+						<img src="img/img-index/dcb98cec3f24117a4f2c7f9bebf2914b353b03c9.jpg"/>
+					</span>
+				</li>
+				<li>
+					<a id="li_top"href="javascript:;">
+						<div id="divt"><em>&nbsp;^</em>
+							TOP
+						</div>
+					</a>
+				</li>
+			</ul>
+		
+	<!--*************************header*******************************-->
+		
+		<div id="header_wrap">
+		<header style="position:relative;z-index:1010">
+			<!--欢迎---登陆---注册-->
+			<div id="h-left" class="h-left">
+				<span id="welcome">欢迎光临莎莎网！</span>
+				<div id="rl">
+					<a href="login.html">登录</a> 或
+					<a href="res.html">免费注册</a>
+				</div>
+			</div>
+			
+			<!--选项列表-->
+			<ul id="h-right" class="h-right">
+				<li id="uCount">
+					<a href="javascript:;">
+						<em id="user">&#xe60b;</em>
+						我的账户<em id="jt">&#xe612;</em>
+						<ul id="ulist">
+							<li>我的订单</li>
+							<li>我的积分</li>
+							<li>我的优惠券</li>
+							<li>我的收藏</li>
+							<li>我的评价</li>
+						</ul>
+					</a>
+				</li>
+				
+				<li id="ushopCar">
+					<a href="javascript:;">
+						<em id="sp">&#xe60f;</em>我的购物车
+					</a>
+					<div id="shopcar">
+						<p>购物车里还没有商品，</p>
+						<p>快去挑选商品吧</p>
+					</div>
+				</li>
+				
+				<li>
+					<a href="javascript:;">
+						<em id="collect">&#xe613;</em>我的收藏
+					</a>
+				</li>
+				
+				<li>
+					<a href="javascript:;">我的站内信</a>
+				</li>
+				
+				<li>
+					<a href="javascript:;">积分中心</a>
+				</li>
+				
+				<li>
+					<a href="javascript:;">Global site</a>
+				</li>
+				
+				<li id="care">
+					<a href="#javascript:;">关注我们</a>
+					<a href="#">
+						<span id="wb">&#xe61a;</span>
+					</a>
+					<img id="wbcode" src="img/img-index/7191af464a49d84fa95c39361cfdd5ef993347fd.jpg"/>
+					<a href="#">
+						<span id="wx">&#xe619;</span>
+					</a>
+					<img id="wxcode" src="img/img-index/d9543ebd87df62d78670356c875833c77b4e4a41.jpg"/>
+				</li>
+			</ul>
+		</header>
+		</div>
+		
+		<!--***************************search*****************************-->
+		<div id="search_wrap" style="background: #fff;">
+		
+		<div id="search" style="background:#fff">
+			<a id="logo" href="index.html">
+				<img src="img/img-index/1115616d26bb4baa26c55bf0e172d0fd8dca963a.png"/>
+			</a>
+			<div id="search_center">
+				<form >
+					<input type="text" name="ss" id="ss" placeholder="JMsolution" />
+					<input type="button" id="ss_btn" value="搜索"/>
+				</form>
+				<ul>
+					<li style="padding-left:0;">
+						<a href="javascript:;">海藻面膜&nbsp;&nbsp;|</a>
+					</li>
+					<li>
+						<a href="javascript:;">兰蔻粉水&nbsp;&nbsp;|</a>
+					</li>
+					<li>
+						<a href="javascript:;">海藻面膜&nbsp;&nbsp;|</a>
+					</li>
+					<li>
+						<a href="javascript:;">面霜&nbsp;&nbsp;|</a>
+					</li>
+					<li>
+						<a href="javascript:;">口红&nbsp;&nbsp;|</a>
+					</li>
+					<li>
+						<a href="javascript:;">科颜氏&nbsp;&nbsp;|</a>
+					</li>
+					<li>
+						<a href="javascript:;">VT&nbsp;&nbsp;|</a>
+					</li>
+					<li>
+						<a href="javascript:;">瑞士葆丽美&nbsp;&nbsp;</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+			
+		</div>
+		<!--****************分类******************-->
+		<div id="nav1_wrap" style="background: #fff;">
+		<div id="nav1" class="nav" style="background: #fff;">
+			<ul id="type_list1" >
+				<li id="tl_1">
+					<em>三</em>
+					<span id="type">全部分类</span>
+				</li>
+			  
+			    <li class="hideLi" style="border:0;">
+			    	<em>&#xe641;</em>
+			    	<span id="type1">面部护理</span>
+			    	<em>&#xe612;</em>
+			    	<ul class="face">
+			    		<li>
+			    			<a href="javascript:;">洁面/磨砂</a>
+			    			<ul class="face_1">
+			    				<li><a href="javascript:;">洁面皂</a></li>
+			    				<li><a href="javascript:;">洁面粉</a></li>
+			    				<li><a href="javascript:;">洁面粉</a></li>
+			    				<li><a href="javascript:;">洁面啫喱</a></li>
+			    				<li style="color:#fa3778">
+			    					<a href="javascript:;">
+			    						泡沫洁面乳
+			    					</a>
+			    				</li>
+			    				<li><a href="javascript:;">洁面皂</a></li>
+			    			
+			    				<li><a href="javascript:;">洁面粉</a></li>
+			    				<li><a href="javascript:;">洁面啫喱</a></li>
+			    			</ul>
+			    		</li>
+			    		<li>
+			    			<a href="javascript:;">洁面/磨砂</a>
+			    			<ul class="face_1">
+			    				<li><a href="javascript:;">洁面皂</a></li>
+			    				<li><a href="javascript:;">洁面粉</a></li>
+			    				<li><a href="javascript:;">洁面粉</a></li>
+			    				<li><a href="javascript:;">洁面啫喱</a></li>
+			    				<li style="color:#fa3778">
+			    					<a href="javascript:;">
+			    						泡沫洁面乳
+			    					</a>
+			    				</li>
+			    				<li><a href="javascript:;">洁面皂</a></li>
+			    			
+			    				<li><a href="javascript:;">洁面粉</a></li>
+			    				<li><a href="javascript:;">洁面啫喱</a></li>
+			    			</ul>
+			    		</li>
+			    		<li>
+			    			<a href="javascript:;">洁面/磨砂</a>
+			    			<ul class="face_1">
+			    				
+			    				<li><a href="javascript:;">洁面粉</a></li>
+			    				<li><a href="javascript:;">洁面啫喱</a></li>
+			    				<li style="color:#fa3778">
+			    					<a href="javascript:;">
+			    						泡沫洁面乳
+			    					</a>
+			    				</li>
+			    				<li><a href="javascript:;">洁面皂</a></li>
+			    			
+			    			</ul>
+			    		</li>
+			    		<li>
+			    			<a href="javascript:;">洁面/磨砂</a>
+			    			<ul class="face_1">
+			    				<li><a href="javascript:;">洁面皂</a></li>
+			    			
+			    				<li><a href="javascript:;">洁面粉</a></li>
+			    				<li><a href="javascript:;">洁面啫喱</a></li>
+			    				<li style="color:#fa3778">
+			    					<a href="javascript:;">
+			    						泡沫洁面乳
+			    					</a>
+			    				</li>
+			    				<li><a href="javascript:;">洁面皂</a></li>
+			    				<li><a href="javascript:;">洁面粉</a></li>
+			    				<li><a href="javascript:;">洁面粉</a></li>
+			    				<li><a href="javascript:;">洁面啫喱</a></li>
+			    			</ul>
+			    		</li>
+			    		<li>
+			    			<a href="javascript:;">洁面/磨砂</a>
+			    			<ul class="face_1">
+			    				<li><a href="javascript:;">洁面皂</a></li>
+			    				
+			    				<li><a href="javascript:;">洁面粉</a></li>
+			    				<li><a href="javascript:;">洁面啫喱</a></li>
+			    				<li style="color:#fa3778">
+			    					<a href="javascript:;">
+			    						泡沫洁面乳
+			    					</a>
+			    				</li>
+			    				<li><a href="javascript:;">洁面皂</a></li>
+			    				<li><a href="javascript:;">洁面粉</a></li>
+			    				<li><a href="javascript:;">洁面粉</a></li>
+			    				<li><a href="javascript:;">洁面啫喱</a></li>
+			    			</ul>
+			    		</li>
+			    		<li>
+			    			<a href="javascript:;">洁面/磨砂</a>
+			    			<ul class="face_1">
+			    				<li><a href="javascript:;">洁面皂</a></li>
+			    				
+			    				<li><a href="javascript:;">洁面粉</a></li>
+			    				<li><a href="javascript:;">洁面啫喱</a></li>
+			    				<li style="color:#fa3778">
+			    					<a href="javascript:;">
+			    						泡沫洁面乳
+			    					</a>
+			    				</li>
+			    				<li><a href="javascript:;">洁面皂</a></li>
+			    				<li><a href="javascript:;">洁面粉</a></li>
+			    				<li><a href="javascript:;">洁面粉</a></li>
+			    				<li><a href="javascript:;">洁面啫喱</a></li>
+			    			</ul>
+			    		</li>
+			    	</ul>
+			    </li>
+			    
+			    <li class="hideLi">
+			    	<em>&#xe627;</em>
+			    	<span id="type2">美状</span>
+			    	<em>&#xe612;</em>
+			    	<ul class="face" style="height:240px;"><!--display:block-->
+			    		<li>
+			    			<a href="javascript:;">洁面/磨砂</a>
+			    			<ul class="face_1">
+			    				<li><a href="javascript:;">洁面皂</a></li>
+			    				<li><a href="javascript:;">洁面粉</a></li>
+			    				<li><a href="javascript:;">洁面啫喱</a></li>
+			    				<li style="color:#fa3778">
+			    					<a href="javascript:;">
+			    						泡沫洁面乳
+			    					</a>
+			    				</li>
+			    				
+			    			</ul>
+			    		</li>
+			    		<li>
+			    			<a href="javascript:;">洁面/磨砂</a>
+			    			<ul class="face_1">
+			    				<li><a href="javascript:;">洁面皂</a></li>
+			    				<li><a href="javascript:;">洁面粉</a></li>
+			    				<li><a href="javascript:;">洁面啫喱</a></li>
+			    				<li style="color:#fa3778">
+			    					<a href="javascript:;">
+			    						泡沫洁面乳
+			    					</a>
+			    				</li>
+			    				
+			    			</ul>
+			    		</li>
+			    		<li>
+			    			<a href="javascript:;">洁面/磨砂</a>
+			    			<ul class="face_1">
+			    				<li><a href="javascript:;">洁面皂</a></li>
+			    				<li><a href="javascript:;">洁面粉</a></li>
+			    				<li><a href="javascript:;">洁面啫喱</a></li>
+			    				<li style="color:#fa3778">
+			    					<a href="javascript:;">
+			    						泡沫洁面乳
+			    					</a>
+			    				</li>
+			    				
+			    			</ul>
+			    		</li>
+			    	</ul>
+			    </li>
+			    
+			    <li class="hideLi">
+			    	<em>&#xe63c;</em>
+			    	<span id="type3">香水</span>
+			    	<em>&#xe612;</em>
+			    	<ul class="face" style="height:100px;"><!--display:block-->
+			    		<li>
+			    			<a href="javascript:;">洁面/磨砂</a>
+			    			<ul class="face_1">
+			    				<li><a href="javascript:;">洁面啫喱</a></li>
+			    				<li style="color:#fa3778">
+			    					<a href="javascript:;">
+			    						泡沫洁面乳
+			    					</a>
+			    				</li>
+			    				<li><a href="javascript:;">洁面皂</a></li>
+			    				<li><a href="javascript:;">洁面粉</a></li>
+			    			</ul>
+			    		</li>
+			    	</ul>
+			    </li>
+			    
+			    <li class="hideLi">
+			    	<em>&#xe67f;</em>
+			    	<span id="type4">健康美肌</span>
+			    	<em>&#xe612;</em>
+			    	<ul class="face" style="height:130px;"><!--display:block-->
+			    		<li>
+			    			<a href="javascript:;">洁面/磨砂</a>
+			    			<ul class="face_1">
+			    				
+			    				<li><a href="javascript:;">洁面粉</a></li>
+			    				<li><a href="javascript:;">洁面啫喱</a></li>
+			    				<li style="color:#fa3778">
+			    					<a href="javascript:;">
+			    						泡沫洁面乳
+			    					</a>
+			    				</li>
+			    				<li><a href="javascript:;">洁面皂</a></li>
+			    				<li><a href="javascript:;">洁面啫喱</a></li>
+			    			</ul>
+			    		</li>
+			    	</ul>
+			    </li>
+			    
+			    <li class="hideLi">
+			    	<em>&#xe641;</em>
+			    	<span id="type5">纤体美胸</span>
+			    	<em>&#xe612;</em>
+			    	<ul class="face" style="height:130px;"><!--display:block-->
+			    		<li>
+			    			<a href="javascript:;">洁面/磨砂</a>
+			    			<ul class="face_1">
+			    				
+			    				<li><a href="javascript:;">洁面粉</a></li>
+			    				<li><a href="javascript:;">洁面啫喱</a></li>
+			    				<li style="color:#fa3778">
+			    					<a href="javascript:;">
+			    						泡沫洁面乳
+			    					</a>
+			    				</li>
+			    				<li><a href="javascript:;">洁面皂</a></li>
+			    				<li><a href="javascript:;">洁面啫喱</a></li>
+			    			</ul>
+			    		</li>
+			    	</ul>
+			    </li>
+			    
+			    <li class="hideLi">
+			    	<em>&#xe603;</em>
+			    	<span id="type6">个人护理</span>
+			    	<em>&#xe612;</em>
+			    	<ul class="face" style="height:180px;"><!--display:block-->
+			    		<li>
+			    			<a href="javascript:;">洁面/磨砂</a>
+			    			<ul class="face_1">
+			    				<li><a href="javascript:;">洁面粉</a></li>
+			    				<li><a href="javascript:;">洁面粉</a></li>
+			    				<li><a href="javascript:;">洁面啫喱</a></li>
+			    				<li style="color:#fa3778">
+			    					<a href="javascript:;">
+			    						泡沫洁面乳
+			    					</a>
+			    				</li>
+			    				<li><a href="javascript:;">洁面皂</a></li>
+			    				<li><a href="javascript:;">洁面啫喱</a></li>
+			    			</ul>
+			    		</li>
+			    		<li>
+			    			<a href="javascript:;">洁面/磨砂</a>
+			    			<ul class="face_1">
+			    				<li><a href="javascript:;">洁面粉</a></li>
+			    				<li><a href="javascript:;">洁面啫喱</a></li>
+			    				<li style="color:#fa3778">
+			    					<a href="javascript:;">
+			    						泡沫洁面乳
+			    					</a>
+			    				</li>
+			    				<li><a href="javascript:;">洁面皂</a></li>
+			    			</ul>
+			    		</li>
+			    	</ul>
+			    </li>
+			    
+			    <li class="hideLi">
+			    	<em>&#xe62c;</em>
+			    	<span id="type7">男士专区</span>
+			    	<em>&#xe612;</em>
+			    	<ul class="face" style="height:100px;"><!--display:block-->
+						<li>
+			    			<a href="javascript:;">洁面/磨砂</a>
+			    			<ul class="face_1">
+			    				<li><a href="javascript:;">洁面粉</a></li>
+			    				<li><a href="javascript:;">洁面啫喱</a></li>
+			    				<li style="color:#fa3778">
+			    					<a href="javascript:;">
+			    						泡沫洁面乳
+			    					</a>
+			    				</li>
+			    				<li><a href="javascript:;">洁面皂</a></li>
+			    			</ul>
+			    		</li>
+			    	</ul>
+			    </li>
+			    
+			    <li class="hideLi">
+			    	<em>&#xe607;</em>
+			    	<span id="type8">孕婴护理</span>
+			    	<em>&#xe612;</em>
+			    	<ul class="face" style="height:120px;"><!--display:block-->
+						<li>
+			    			<a href="javascript:;">洁面/磨砂</a>
+			    			<ul class="face_1">
+			    				<li><a href="javascript:;">洁面粉</a></li>
+			    				<li><a href="javascript:;">洁面啫喱</a></li>
+			    				<li style="color:#fa3778">
+			    					<a href="javascript:;">
+			    						泡沫洁面乳
+			    					</a>
+			    				</li>
+			    				<li><a href="javascript:;">洁面粉</a></li>
+			    				<li><a href="javascript:;">洁面啫喱</a></li>
+			    				<li><a href="javascript:;">洁面皂</a></li>
+			    			</ul>
+			    		</li>
+			    		</li>
+			    	</ul>
+			    </li>
+			</ul>
+	<!-------------------------special_list----------------------->		
+			<ul id="special_list1">
+				<li>
+					<a href="javascript:;">
+						<img src="img/img-index/c769a85742b143ca2e0d52f595a5afc0a06f3c75.gif"/>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">闪电保税仓
+		
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">限时特卖&nbsp;<span id="hot">hot</span></a>
+				</li>
+				<li>
+					<a href="javascript:;">大牌底价购</a>
+				</li>
+				<li>
+					<a href="javascript:;">贵宾专享</a>
+				</li>
+				
+				<li>
+					<a href="javascript:;">所有品牌<em>&#xe612;</em>
+						<ul id="all_brand">
+							<li id="hot_b">热门品牌</li>
+							<div id="all_list">
+								<ul id="hot_brand">
+									<li><a href="">森田药妆   &ensp;&ensp;SAM TIN</a></li>
+									<li><a href="">希思黎    &ensp;&ensp;sesly</a></li>
+									<li><a href="">雅诗兰黛   &ensp;&ensp; Estee Lauder</a></li>
+									<li><a href="">森田药妆    &ensp;&ensp;SAM TIN</a></li>
+									<li><a href="">希思黎    &ensp;&ensp;sesly</a></li>
+									<li><a href="">森田药妆   &ensp;&ensp; SAM TIN</a></li>
+									<li><a href="">希思黎   &ensp;&ensp; sesly</a></li>
+									<li><a href="">雅诗兰黛  &ensp;&ensp;  Estee Lauder</a></li>
+								</ul>
+								<a id="chakan" href="javascript:;">
+									<h5>查看全部品牌</h5>
+								</a>
+							</div>
+							
+							<ul id="all_img">
+								<li style="border-top:0;">
+									<a href="javascript:;">
+										<img src="img/img-index/22278f2d654bbe9ca9ff1c3029792d99d91cbae1.jpg"/>
+									</a>
+								</li>
+					            <li style="border-top:0;">
+									<a href="javascript:;">
+										<img src="img/img-index/22278f2d654bbe9ca9ff1c3029792d99d91cbae1.jpg"/>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<img src="img/img-index/22278f2d654bbe9ca9ff1c3029792d99d91cbae1.jpg"/>
+									</a>
+								</li>
+					            <li>
+									<a href="javascript:;">
+										<img src="img/img-index/22278f2d654bbe9ca9ff1c3029792d99d91cbae1.jpg"/>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<img src="img/img-index/22278f2d654bbe9ca9ff1c3029792d99d91cbae1.jpg"/>
+									</a>
+								</li>
+					            <li>
+									<a href="javascript:;">
+										<img src="img/img-index/22278f2d654bbe9ca9ff1c3029792d99d91cbae1.jpg"/>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<img src="img/img-index/22278f2d654bbe9ca9ff1c3029792d99d91cbae1.jpg"/>
+									</a>
+								</li>
+					            <li>
+									<a href="javascript:;">
+										<img src="img/img-index/22278f2d654bbe9ca9ff1c3029792d99d91cbae1.jpg"/>
+									</a>
+								</li>
+							</ul>
+						</ul>
+					</a>
+				</li>
+		</ul>	
+	</div>
+	</div>
+		
+		
+		<!--****************产品分类******************-->
+		
+		<ul id="ProType">
+			<li>产品分类</li>
+			<li>
+				&gt; &nbsp;面部护肤
+				<ul class="smallList">
+					<li><a href="#">&gt; &nbsp;洁面</a></li>
+					<li><a href="#">&gt; &nbsp;磨砂</a></li>
+					<li><a href="#">&gt; &nbsp;卸妆</a></li>
+					<li><a href="#">&gt; &nbsp;化妆水</a></li>
+					<li><a href="#">&gt; &nbsp;精华</a></li>
+					<li><a href="#">&gt; &nbsp;面霜</a></li>
+					<li><a href="#">&gt; &nbsp;面膜</a></li>
+					<li><a href="#">&gt; &nbsp;颈部护理</a></li>
+					<li><a href="#">&gt; &nbsp;眼部护理</a></li>
+					<li><a href="#">&gt; &nbsp;唇部护理</a></li>
+					<li><a href="#">&gt; &nbsp;防晒护理</a></li>
+					<li><a href="#">&gt; &nbsp;美容工具</a></li>
+					<li><a href="#">&gt; &nbsp;小样</a></li>
+				</ul>
+			</li>
+			<li>
+				&gt; &nbsp;彩妆
+				<ul class="smallList">
+					<li><a href="#">&gt; &nbsp;洁面</a></li>
+					<li><a href="#">&gt; &nbsp;磨砂</a></li>
+					<li><a href="#">&gt; &nbsp;卸妆</a></li>
+					<li><a href="#">&gt; &nbsp;化妆水</a></li>
+					<li><a href="#">&gt; &nbsp;精华</a></li>
+					<li><a href="#">&gt; &nbsp;防晒护理</a></li>
+					<li><a href="#">&gt; &nbsp;美容工具</a></li>
+					<li><a href="#">&gt; &nbsp;小样</a></li>
+				</ul>
+			</li>
+			<li>
+				&gt; &nbsp;香水
+				<ul class="smallList">
+					<li><a href="#">&gt; &nbsp;洁面</a></li>
+					<li><a href="#">&gt; &nbsp;磨砂</a></li>
+					<li><a href="#">&gt; &nbsp;卸妆</a></li>
+					<li><a href="#">&gt; &nbsp;化妆水</a></li>
+					<li><a href="#">&gt; &nbsp;精华</a></li>
+					<li><a href="#">&gt; &nbsp;防晒护理</a></li>
+					<li><a href="#">&gt; &nbsp;美容工具</a></li>
+					<li><a href="#">&gt; &nbsp;小样</a></li>
+				</ul>
+			</li>
+			<li>
+				&gt; &nbsp;健康美肌
+				<ul class="smallList">
+					<li><a href="#">&gt; &nbsp;洁面</a></li>
+					<li><a href="#">&gt; &nbsp;磨砂</a></li>
+					<li><a href="#">&gt; &nbsp;卸妆</a></li>
+					<li><a href="#">&gt; &nbsp;美容工具</a></li>
+					<li><a href="#">&gt; &nbsp;小样</a></li>
+				</ul>
+			</li>
+			<li>
+				&gt; &nbsp;纤体美胸
+				<ul class="smallList">
+					<li><a href="#">&gt; &nbsp;洁面</a></li>
+					<li><a href="#">&gt; &nbsp;磨砂</a></li>
+					<li><a href="#">&gt; &nbsp;卸妆</a></li>
+					<li><a href="#">&gt; &nbsp;化妆水</a></li>
+					<li><a href="#">&gt; &nbsp;精华</a></li>
+					<li><a href="#">&gt; &nbsp;防晒护理</a></li>
+					<li><a href="#">&gt; &nbsp;美容工具</a></li>
+					<li><a href="#">&gt; &nbsp;小样</a></li>
+				</ul>
+			</li>
+			<li>
+				&gt; &nbsp;个人护理
+				<ul class="smallList">
+					<li><a href="#">&gt; &nbsp;洁面</a></li>
+					<li><a href="#">&gt; &nbsp;磨砂</a></li>
+					<li><a href="#">&gt; &nbsp;卸妆</a></li>
+					<li><a href="#">&gt; &nbsp;化妆水</a></li>
+					<li><a href="#">&gt; &nbsp;精华</a></li>
+					<li><a href="#">&gt; &nbsp;防晒护理</a></li>
+					<li><a href="#">&gt; &nbsp;美容工具</a></li>
+					<li><a href="#">&gt; &nbsp;小样</a></li>
+				</ul>
+			</li>
+			<li>
+				&gt; &nbsp;男士专区
+				<ul class="smallList">
+					<li><a href="#">&gt; &nbsp;洁面</a></li>
+					<li><a href="#">&gt; &nbsp;磨砂</a></li>
+					<li><a href="#">&gt; &nbsp;卸妆</a></li>
+					<li><a href="#">&gt; &nbsp;化妆水</a></li>
+					<li><a href="#">&gt; &nbsp;精华</a></li>
+					<li><a href="#">&gt; &nbsp;防晒护理</a></li>
+					<li><a href="#">&gt; &nbsp;美容工具</a></li>
+					<li><a href="#">&gt; &nbsp;小样</a></li>
+				</ul>
+			</li>
+			<li>
+				&gt; &nbsp;孕婴护理
+				<ul class="smallList">
+					<li><a href="#">&gt; &nbsp;洁面</a></li>
+					<li><a href="#">&gt; &nbsp;磨砂</a></li>
+					<li><a href="#">&gt; &nbsp;卸妆</a></li>
+					<li><a href="#">&gt; &nbsp;化妆水</a></li>
+					<li><a href="#">&gt; &nbsp;精华</a></li>
+					<li><a href="#">&gt; &nbsp;防晒护理</a></li>
+					<li><a href="#">&gt; &nbsp;美容工具</a></li>
+					<li><a href="#">&gt; &nbsp;小样</a></li>
+				</ul>
+			</li>
+			<li>
+				&gt; &nbsp;配件
+				<ul class="smallList">
+					<li><a href="#">&gt; &nbsp;洁面</a></li>
+					<li><a href="#">&gt; &nbsp;磨砂</a></li>
+					<li><a href="#">&gt; &nbsp;卸妆</a></li>
+					<li><a href="#">&gt; &nbsp;化妆水</a></li>
+					<li><a href="#">&gt; &nbsp;精华</a></li>
+					<li><a href="#">&gt; &nbsp;防晒护理</a></li>
+					<li><a href="#">&gt; &nbsp;美容工具</a></li>
+					<li><a href="#">&gt; &nbsp;小样</a></li>
+				</ul>
+			</li>
+			
+		</ul>
+		
+		<ul id="scan">
+			<h3>浏览记录</h3>
+			<li>
+				<a href="javascript:;">
+					<img src="img/img-res/111.jpg"/>
+					<div id="scanWord">
+						<span>香港特快直送</span>
+						<span>零关扣</span>
+						<span>包税</span>
+						<span>泰国蕾丝</span>
+						<span>泰国蕾丝状</span>
+						<div id="scanPrice">
+							<span>￥59</span>
+							<span>￥109</span>
+						</div>
+					</div>
+					
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<img src="img/img-res/111.jpg"/>
+					<div id="scanWord">
+						<span>香港特快直送</span>
+						<span>零关扣</span>
+						<span>包税</span>
+						<span>泰国蕾丝</span>
+						<span>泰国蕾丝状</span>
+						<div id="scanPrice">
+							<span>￥59</span>
+							<span>￥109</span>
+						</div>
+					</div>
+					
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<img src="img/img-res/111.jpg"/>
+					<div id="scanWord">
+						<span>香港特快直送</span>
+						<span>零关扣</span>
+						<span>包税</span>
+						<span>泰国蕾丝</span>
+						<span>泰国蕾丝状</span>
+						<div id="scanPrice">
+							<span>￥59</span>
+							<span>￥109</span>
+						</div>
+					</div>
+					
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<img src="img/img-res/111.jpg"/>
+					<div id="scanWord">
+						<span>香港特快直送</span>
+						<span>零关扣</span>
+						<span>包税</span>
+						<span>泰国蕾丝</span>
+						<span>泰国蕾丝状</span>
+						<div id="scanPrice">
+							<span>￥59</span>
+							<span>￥109</span>
+						</div>
+					</div>
+					
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<img src="img/img-res/111.jpg"/>
+					<div id="scanWord">
+						<span>香港特快直送</span>
+						<span>零关扣</span>
+						<span>包税</span>
+						<span>泰国蕾丝</span>
+						<span>泰国蕾丝状</span>
+						<div id="scanPrice">
+							<span>￥59</span>
+							<span>￥109</span>
+						</div>
+					</div>
+					
+				</a>
+			</li>
+		</ul>
+		
+		
+		<div id="TypeInf">
+			<h5>已选
+				<span>充值筛选项</span>
+			</h5>
+			
+			<div id="pick">
+				<span class="Pickspan">分类</span>
+				<ul class="Pickul">
+					<li><a href="javascript:;">沐浴露</a></li>
+					<li><a href="javascript:;">香皂</a></li>
+					<li><a href="javascript:;">浴盐</a></li>
+					<li><a href="javascript:;">润肤油</a></li>
+					<li><a href="javascript:;">润肤乳</a></li>
+					<li><a href="javascript:;">沐浴套装</a></li>
+					<li><a href="javascript:;">沐浴露</a></li>
+				</ul>
+			</div>
+			
+			<div id="BrandD">
+				<span class="Pickspan">品牌</span>
+				<ul class="Pickul">
+					<li><a href="javascript:;">SNP</a></li>
+					<li><a href="javascript:;">伊丽莎白.雅顿</a></li>
+					<li><a href="javascript:;">泉肌</a></li>
+					<li><a href="javascript:;">皇家玛丽娜</a></li>
+					<li><a href="javascript:;">纪梵希</a></li>
+					<li><a href="javascript:;">伊丽莎白.雅顿</a></li>
+					<li><a href="javascript:;">茉莉寇</a></li>
+					
+				</ul>
+				<a href="javascript:;">更多</a>
+			</div>
+			
+			<div id="BrandD">
+				<span class="Pickspan">优惠</span>
+				<ul class="Pickul">
+					<li><a href="javascript:;">直降</a></li>
+					
+				</ul>
+			</div>
+		</div>
+		
+		<ul id="sort" >
+			<li>
+				<a href="javascript:;">排序</a>
+			</li>
+			<li>
+				<a href="javascript:;">销售</a>
+			</li>
+			<li>
+				<a href="javascript:;">人气</a>
+			</li>
+			<li>
+				<a href="javascript:;">评分</a>
+			</li>
+			<li>
+				<a href="javascript:;">上架时间</a>
+			</li>
+			<li>
+				<a href="javascript:;">价格</a>
+			</li>
+			
+			<input type="checkbox"/> 只看特卖 （共150件商品）
+		</ul>
+		
+		<ul class="NewList">
+			<li>
+				<a href="javascript:;">
+					<div class="NewBox">新品上市</div>
+					<i>韩国品牌</i>
+					<dl class="NewPic">
+						<dt>
+							<img src="img/img-index/0c2c6e232ddd1dc72eb17a3e90719fda4312ba59.jpg"/>
+						</dt>
+						<dd>
+							<div class="NewWords">
+								<div class="NProIntro_bottom">
+									<div class="NProSuit">
+										<span>香港特快直送</span>&nbsp;
+										<span>零扣关</span>&nbsp;
+										<span>包税</span>
+										<em>JMsolution 青光海洋珍珠面膜三部曲  (10 片)  </em>
+									</div>
+									<div class="Nprice">￥58</div>
+									
+								</div>
+							</div>
+						</dd>
+					</dl>
+					
+					<ul id="clbt">
+						<li>
+							<a href="jaascript:;">
+								<img src="img/img-index/0c2c6e232ddd1dc72eb17a3e90719fda4312ba59.jpg"/>
+							</a>
+						</li>
+						<li>
+							<a href="jaascript:;">
+								<img src="img/img-index/0c2c6e232ddd1dc72eb17a3e90719fda4312ba59.jpg"/>
+							</a>
+						</li>
+						<li>
+							<a href="jaascript:;">
+								<img src="img/img-index/0c2c6e232ddd1dc72eb17a3e90719fda4312ba59.jpg"/>
+							</a>
+						</li>
+					</ul>
+					<input type="button" id="QBtn" value="立即抢购" />
+				</a>
+			</li>
+			
+			<li>
+				<a href="javascript:;">
+					<div class="NewBox">新品上市</div>
+					<i>韩国品牌</i>
+					<dl class="NewPic">
+						<dt>
+							<img src="img/img-index/0c2c6e232ddd1dc72eb17a3e90719fda4312ba59.jpg"/>
+						</dt>
+						<dd>
+							<div class="NewWords">
+								<div class="NProIntro_bottom">
+									<div class="NProSuit">
+										<span>香港特快直送</span>&nbsp;
+										<span>零扣关</span>&nbsp;
+										<span>包税</span>
+										<em>JMsolution 青光海洋珍珠面膜三部曲  (10 片)  </em>
+									</div>
+									<div class="Nprice">￥58</div>
+									
+								</div>
+							</div>
+						</dd>
+					</dl>
+					
+					<ul id="clbt">
+						<li>
+							<a href="jaascript:;">
+								<img src="img/img-index/0c2c6e232ddd1dc72eb17a3e90719fda4312ba59.jpg"/>
+							</a>
+						</li>
+						<li>
+							<a href="jaascript:;">
+								<img src="img/img-index/0c2c6e232ddd1dc72eb17a3e90719fda4312ba59.jpg"/>
+							</a>
+						</li>
+						<li>
+							<a href="jaascript:;">
+								<img src="img/img-index/0c2c6e232ddd1dc72eb17a3e90719fda4312ba59.jpg"/>
+							</a>
+						</li>
+					</ul>
+					<input type="button" id="QBtn" value="立即抢购" />
+				</a>
+			</li>
+			
+		</ul>
+
+		<div id="bottom_wrap">
+			<div id="bottom" >
+				<ul class="air">
+					<li>
+						<img src="img/img-index/img1.jpg"/>
+						<dl>
+							<dt>香港特快直达</dt>
+							<dd>报税零扣关&nbsp;￥288包邮</dd>
+						</dl>
+					</li>
+					
+					<li>
+						<img src="img/img-index/img2.jpg"/>
+						<dl>
+							<dt>正品保证</dt>
+							<dd>专注美妆护肤40年</dd>
+						</dl>
+					</li>
+					<li>
+						<img src="img/img-index/img3.jpg"/>
+						<dl>
+							<dt>保税仓直送</dt>
+							<dd>包税零扣关 &nbsp;¥168免邮</dd>
+						</dl>
+					</li>
+					
+					<li>
+						<img src="img/img-index/img4.jpg"/>
+						<dl>
+							<dt>30天退换保证</dt>
+							<dd>为您提供售后无忧保障</dd>
+						</dl>
+					</li>
+					<li style="margin-right:0;">
+						<img src="img/img-index/img5.jpg"/>
+						<dl>
+							<dt>香港上市</dt>
+							<dd>股票代码 HK00178</dd>
+						</dl>
+					</li>
+					
+					
+				</ul>
+			
+				<div id="Bot_list">
+					<ul class="Bottom_list">
+						<li><h5>新手上路</h5><li>
+						<li><a href="javascript:;">新手上路</a></li>
+						<li><a href="javascript:;">新手上路</a></li>
+						<li><a href="javascript:;">新手上路</a></li>
+						<li><a href="javascript:;">新手上路</a></li>
+						<li><a href="javascript:;">新手上路</a></li>
+					</ul>
+					
+					<ul class="Bottom_list">
+						<li><h5>新手上路</h5><li>
+						<li><a href="javascript:;">新手上路</a></li>
+						<li><a href="javascript:;">新手上路</a></li>
+						<li><a href="javascript:;">新手上路</a></li>
+						<li><a href="javascript:;">新手上路</a></li>
+					</ul>
+					
+					<ul class="Bottom_list">
+						<li><h5>新手上路</h5><li>
+						<li><a href="javascript:;">新手上路</a></li>
+						<li><a href="javascript:;">新手上路</a></li>
+						<li><a href="javascript:;">新手上路</a></li>
+					</ul>
+					
+					<ul class="Bottom_list">
+						<li><h5>新手上路</h5><li>
+						<li><a href="javascript:;">新手上路</a></li>
+						<li><a href="javascript:;">新手上路</a></li>
+					</ul>
+					
+					<ul class="Bottom_list">
+						<li><h5>新手上路</h5><li>
+						<li><a href="javascript:;">新手上路</a></li>
+						<li><a href="javascript:;">新手上路</a></li>
+						<li><a href="javascript:;">新手上路</a></li>
+					</ul>
+					
+					
+				</div>
+			
+				<div id="Bcode">
+					<dl>
+						<dt>
+							<img src="img/img-index/7191af464a49d84fa95c39361cfdd5ef993347fd.jpg"/>
+						</dt>
+						<dd> 
+							<p>莎莎网官方微博</p>
+							<span>@莎莎网</span>
+					    </dd>
+					</dl>
+					
+					<dl style="margin-right:0;">
+						<dt>
+							<img src="img/img-index/92916c648aa5518f6c52210ff2e8418eb3c750a0.jpg"/>
+						</dt>
+						<dd> 
+							<p>莎莎网官方微信</p>
+							<span>@莎莎网</span>
+					    </dd>
+					</dl>
+				</div>
+				
+				<a class="Bimg"href="javascript:;">
+					<img src="img/img-index/2ba94eca9ab1e31bff8edcc9a4d60e764f051972.jpg"/>
+				</a>
+			</div>
+		</div>
+		
+		<div id="footer_wrap">
+			<div id="footer">
+				<ul>
+					<li><a href="javascript:;">关于莎莎&nbsp;&nbsp; |</a></li>
+					<li>
+						<a href="javascript:;">&nbsp;&nbsp;关于莎莎&nbsp;&nbsp; |</a> 
+					</li>
+					<li>
+						<a href="javascript:;">&nbsp;&nbsp;关于莎莎&nbsp;&nbsp; |</a> 
+					</li>
+					<li>
+						<a href="javascript:;">&nbsp;&nbsp;关于莎莎&nbsp;&nbsp; |</a> 
+					</li>
+					<li>
+						<a href="javascript:;">&nbsp;&nbsp;关于莎莎&nbsp;&nbsp; |</a> 
+					</li>
+					<li>
+						<a href="javascript:;">&nbsp;&nbsp;关于莎莎&nbsp;&nbsp; |</a> 
+					</li>
+					<li>
+						<a href="javascript:;">&nbsp;&nbsp;关于莎莎&nbsp;&nbsp; |</a> 
+					</li>
+					<li>
+						<a href="javascript:;">&nbsp;&nbsp;关于莎莎&nbsp;&nbsp; |</a> 
+					</li>
+					<li>
+						<a href="javascript:;">&nbsp;&nbsp;关于莎莎&nbsp;&nbsp; |</a> 
+					</li>
+					<li>
+						<a href="javascript:;">&nbsp;&nbsp;关于莎莎</a> 
+					</li>
+				</ul><br>
+				<p>Copyright 2000-2018 Sa Sa dot Com Limited 版权所有莎莎国际控股有限公司成员 </p>
+			</div>
+		</div>
+			
+	</body>
+	<script type="text/javascript">
+		$("#type_list1 >li").each(function(index,value){
+		$(value).hover(function(){
+			$(value).css({"background":"#fff","color":"#000"});
+			$('#tl_1').css({"background":"#333333","color":"#fff"});
+			$(value).find(".face").css({"display":"block"});
+			
+			
+			$(".face > li").each(function(index,value){
+				$(value).find('a').hover(function(){
+					$(value).find('a').css({"color":"#fa3778"});
+					$(value).find('ul li a').css({"color":"#ADADAD"});
+				},function(){
+					$(value).find('a').css({"color":"#4f484a"});
+					$(value).find('ul li a').css({"color":"#ADADAD"});
+					$(".face_1 > li").each(function(index,value){
+						$(value).find('a').hover(function(){
+							$(this).css({"color":"#fa3778"});
+						},function(){
+							$(this).css({"color":"#ADADAD"});
+						})
+					})
+				})
+			})
+			
+		},function(){
+			$(value).css({"background":"#fa3778","color":"#fff"});
+			$('#tl_1').css({"background":"#333333","color":"#fff"});
+			$(value).find(".face").css({"display":"none"});
+		})
+	})
+		
+	$("#type_list1").hover(function(){
+		$(".hideLi").css({"display":"block"});
+		
+	},function(){
+		$(".hideLi").css({"display":"none"});
+	})
+	</script>
+
+	<script type="text/javascript">
+		//香港特快直达
+		$("#special_list1 > li > a").hover(function(){
+			$(this).css({"color":"#fa3778"});
+		
+			$("#special_list1 > li").last().hover(function(){
+				$("#all_brand").css({"display":"block"});
+			},function(){
+				$("#all_brand").css({"display":"none"});
+			})
+		},function(){
+			$(this).css({"color":""});
+		})
+
+	</script>
+	
+	<!--小列表点击出现-->
+	<script type="text/javascript">
+		$("#ProType > li").each(function(index,value){
+			$(value).click(function(){
+				$(value).css({background:"#fff"});
+				$(value).find(".smallList").css({"display":"block"});
+				$(value).click(function(){
+					$(value).css({background:"#e8e6e7"});
+					$(value).find(".smallList").css({"display":"none"});
+				})
+			})
+		})
+			
+	</script>
+	
+	<script type="text/javascript">
+		$("#sort > li ").each(function(index,value){
+			$(value).click(function(){
+				$(value).find("a").css({color:"#c69a62"});
+				$(value).siblings().find("a").css({color:"#8C8C8C"});
+				
+			})
+		})
+	</script>
+	
+	<!--li变大-->
+	<script type="text/javascript">
+		
+		$(".NewList > li").each(function(index,value){
+			$(value).hover(function(){
+				$(this).animate({width:335,height:485,zIndex:1000,paddingRight:0});
+				$(value).next().css({position:"relative",left:-100,top:0,zIndex:999});
+				
+			},function(){
+				$(this).css({width:255,height:425,zIndex:1000,paddingRight:10});
+				$(value).next().css({position:"relative",left:0,top:0,zIndex:998});
+			})
+		})
+	</script>
+
+</html>

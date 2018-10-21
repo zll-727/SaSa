@@ -1,0 +1,1453 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="css/xiangqing.css"/>
+		
+		<script src="js/jquery-1.11.3.js"></script>
+		<script src="js/require.js" data-main="js/index"></script>
+	</head>
+	<body>
+		
+		<ul id="floor" >
+				<li>
+					<a href="javascript:;"><em>&#xe60b;</em></a>
+					<span id="f_user">我的账户</span>
+				</li>
+				<li id="f_sp">
+					<a href="javascript:;" style="color:#fff">
+						
+						<div id="f_spw">
+							<em>&#xe60f;</em>
+							购物车
+							<div id="div0">0</div>
+						</div>
+					</a>
+					
+				</li>
+				<li>
+					<a href="javascript:;"><em>&#xe613;</em></a>
+					<span id="f_hert">我的收藏</span>
+				</li>
+				<li>
+					<a href="javascript:;"><em>&#xe60b;</em></a>
+					<span id="f_trap">浏览记录</span>
+				</li>
+				<li id="kefu">
+					<a href="javascript:;"><em>&#xe60a;</em></a>
+					<span id="f_ser">线上客服</span>
+				</li>
+				<li>
+					<a href="javascript:;"><em>&#xe60b;</em></a>
+					<span id="f_code">
+						<img src="img/img-index/dcb98cec3f24117a4f2c7f9bebf2914b353b03c9.jpg"/>
+					</span>
+				</li>
+				<li>
+					<a id="li_top"href="javascript:;">
+						<div id="divt"><em>&nbsp;^</em>
+							TOP
+						</div>
+					</a>
+				</li>
+			</ul>
+		
+	<!--*************************header*******************************-->
+		
+		<div id="header_wrap">
+		<header style="position:relative;z-index:1010">
+			<!--欢迎---登陆---注册-->
+			<div id="h-left" class="h-left">
+				<span id="welcome">欢迎光临莎莎网！</span>
+				<div id="rl">
+					<a href="login.html">登录</a> 或
+					<a href="res.html">免费注册</a>
+				</div>
+			</div>
+			
+			<!--选项列表-->
+			<ul id="h-right" class="h-right">
+				<li id="uCount">
+					<a href="javascript:;">
+						<em id="user">&#xe60b;</em>
+						我的账户<em id="jt">&#xe612;</em>
+						<ul id="ulist">
+							<li>我的订单</li>
+							<li>我的积分</li>
+							<li>我的优惠券</li>
+							<li>我的收藏</li>
+							<li>我的评价</li>
+						</ul>
+					</a>
+				</li>
+				
+				<li id="ushopCar">
+					<a href="javascript:;">
+						<em id="sp">&#xe60f;</em>我的购物车
+					</a>
+					<div id="shopcar">
+						<p>购物车里还没有商品，</p>
+						<p>快去挑选商品吧</p>
+					</div>
+				</li>
+				
+				<li>
+					<a href="javascript:;">
+						<em id="collect">&#xe613;</em>我的收藏
+					</a>
+				</li>
+				
+				<li>
+					<a href="javascript:;">我的站内信</a>
+				</li>
+				
+				<li>
+					<a href="javascript:;">积分中心</a>
+				</li>
+				
+				<li>
+					<a href="javascript:;">Global site</a>
+				</li>
+				
+				<li id="care">
+					<a href="#javascript:;">关注我们</a>
+					<a href="#">
+						<span id="wb">&#xe61a;</span>
+					</a>
+					<img id="wbcode" src="img/img-index/7191af464a49d84fa95c39361cfdd5ef993347fd.jpg"/>
+					<a href="#">
+						<span id="wx">&#xe619;</span>
+					</a>
+					<img id="wxcode" src="img/img-index/d9543ebd87df62d78670356c875833c77b4e4a41.jpg"/>
+				</li>
+			</ul>
+		</header>
+		</div>
+		
+		<!--***************************search*****************************-->
+		<div id="search_wrap" style="background: #fff;">
+		
+		<div id="search" style="background:#fff">
+			<a id="logo" href="index.html">
+				<img src="img/img-index/1115616d26bb4baa26c55bf0e172d0fd8dca963a.png"/>
+			</a>
+			<div id="search_center">
+				<form >
+					<input type="text" name="ss" id="ss" placeholder="JMsolution" />
+					<input type="button" id="ss_btn" value="搜索"/>
+				</form>
+				<ul>
+					<li style="padding-left:0;">
+						<a href="javascript:;">海藻面膜&nbsp;&nbsp;|</a>
+					</li>
+					<li>
+						<a href="javascript:;">兰蔻粉水&nbsp;&nbsp;|</a>
+					</li>
+					<li>
+						<a href="javascript:;">海藻面膜&nbsp;&nbsp;|</a>
+					</li>
+					<li>
+						<a href="javascript:;">面霜&nbsp;&nbsp;|</a>
+					</li>
+					<li>
+						<a href="javascript:;">口红&nbsp;&nbsp;|</a>
+					</li>
+					<li>
+						<a href="javascript:;">科颜氏&nbsp;&nbsp;|</a>
+					</li>
+					<li>
+						<a href="javascript:;">VT&nbsp;&nbsp;|</a>
+					</li>
+					<li>
+						<a href="javascript:;">瑞士葆丽美&nbsp;&nbsp;</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+			
+		</div>
+		<!--****************分类******************-->
+		<div id="nav1_wrap" style="background: #fff;">
+		<div id="nav1" class="nav" style="background: #fff;">
+			<ul id="type_list1" >
+				<li id="tl_1">
+					<em>三</em>
+					<span id="type">全部分类</span>
+				</li>
+			  
+			    <li class="hideLi" style="border:0;">
+			    	<em>&#xe641;</em>
+			    	<span id="type1">面部护理</span>
+			    	<em>&#xe612;</em>
+			    	<ul class="face">
+			    		<li>
+			    			<a href="javascript:;">洁面/磨砂</a>
+			    			<ul class="face_1">
+			    				<li><a href="javascript:;">洁面皂</a></li>
+			    				<li><a href="javascript:;">洁面粉</a></li>
+			    				<li><a href="javascript:;">洁面粉</a></li>
+			    				<li><a href="javascript:;">洁面啫喱</a></li>
+			    				<li style="color:#fa3778">
+			    					<a href="javascript:;">
+			    						泡沫洁面乳
+			    					</a>
+			    				</li>
+			    				<li><a href="javascript:;">洁面皂</a></li>
+			    			
+			    				<li><a href="javascript:;">洁面粉</a></li>
+			    				<li><a href="javascript:;">洁面啫喱</a></li>
+			    			</ul>
+			    		</li>
+			    		<li>
+			    			<a href="javascript:;">洁面/磨砂</a>
+			    			<ul class="face_1">
+			    				<li><a href="javascript:;">洁面皂</a></li>
+			    				<li><a href="javascript:;">洁面粉</a></li>
+			    				<li><a href="javascript:;">洁面粉</a></li>
+			    				<li><a href="javascript:;">洁面啫喱</a></li>
+			    				<li style="color:#fa3778">
+			    					<a href="javascript:;">
+			    						泡沫洁面乳
+			    					</a>
+			    				</li>
+			    				<li><a href="javascript:;">洁面皂</a></li>
+			    			
+			    				<li><a href="javascript:;">洁面粉</a></li>
+			    				<li><a href="javascript:;">洁面啫喱</a></li>
+			    			</ul>
+			    		</li>
+			    		<li>
+			    			<a href="javascript:;">洁面/磨砂</a>
+			    			<ul class="face_1">
+			    				
+			    				<li><a href="javascript:;">洁面粉</a></li>
+			    				<li><a href="javascript:;">洁面啫喱</a></li>
+			    				<li style="color:#fa3778">
+			    					<a href="javascript:;">
+			    						泡沫洁面乳
+			    					</a>
+			    				</li>
+			    				<li><a href="javascript:;">洁面皂</a></li>
+			    			
+			    			</ul>
+			    		</li>
+			    		<li>
+			    			<a href="javascript:;">洁面/磨砂</a>
+			    			<ul class="face_1">
+			    				<li><a href="javascript:;">洁面皂</a></li>
+			    			
+			    				<li><a href="javascript:;">洁面粉</a></li>
+			    				<li><a href="javascript:;">洁面啫喱</a></li>
+			    				<li style="color:#fa3778">
+			    					<a href="javascript:;">
+			    						泡沫洁面乳
+			    					</a>
+			    				</li>
+			    				<li><a href="javascript:;">洁面皂</a></li>
+			    				<li><a href="javascript:;">洁面粉</a></li>
+			    				<li><a href="javascript:;">洁面粉</a></li>
+			    				<li><a href="javascript:;">洁面啫喱</a></li>
+			    			</ul>
+			    		</li>
+			    		<li>
+			    			<a href="javascript:;">洁面/磨砂</a>
+			    			<ul class="face_1">
+			    				<li><a href="javascript:;">洁面皂</a></li>
+			    				
+			    				<li><a href="javascript:;">洁面粉</a></li>
+			    				<li><a href="javascript:;">洁面啫喱</a></li>
+			    				<li style="color:#fa3778">
+			    					<a href="javascript:;">
+			    						泡沫洁面乳
+			    					</a>
+			    				</li>
+			    				<li><a href="javascript:;">洁面皂</a></li>
+			    				<li><a href="javascript:;">洁面粉</a></li>
+			    				<li><a href="javascript:;">洁面粉</a></li>
+			    				<li><a href="javascript:;">洁面啫喱</a></li>
+			    			</ul>
+			    		</li>
+			    		<li>
+			    			<a href="javascript:;">洁面/磨砂</a>
+			    			<ul class="face_1">
+			    				<li><a href="javascript:;">洁面皂</a></li>
+			    				
+			    				<li><a href="javascript:;">洁面粉</a></li>
+			    				<li><a href="javascript:;">洁面啫喱</a></li>
+			    				<li style="color:#fa3778">
+			    					<a href="javascript:;">
+			    						泡沫洁面乳
+			    					</a>
+			    				</li>
+			    				<li><a href="javascript:;">洁面皂</a></li>
+			    				<li><a href="javascript:;">洁面粉</a></li>
+			    				<li><a href="javascript:;">洁面粉</a></li>
+			    				<li><a href="javascript:;">洁面啫喱</a></li>
+			    			</ul>
+			    		</li>
+			    	</ul>
+			    </li>
+			    
+			    <li class="hideLi">
+			    	<em>&#xe627;</em>
+			    	<span id="type2">美状</span>
+			    	<em>&#xe612;</em>
+			    	<ul class="face" style="height:240px;"><!--display:block-->
+			    		<li>
+			    			<a href="javascript:;">洁面/磨砂</a>
+			    			<ul class="face_1">
+			    				<li><a href="javascript:;">洁面皂</a></li>
+			    				<li><a href="javascript:;">洁面粉</a></li>
+			    				<li><a href="javascript:;">洁面啫喱</a></li>
+			    				<li style="color:#fa3778">
+			    					<a href="javascript:;">
+			    						泡沫洁面乳
+			    					</a>
+			    				</li>
+			    				
+			    			</ul>
+			    		</li>
+			    		<li>
+			    			<a href="javascript:;">洁面/磨砂</a>
+			    			<ul class="face_1">
+			    				<li><a href="javascript:;">洁面皂</a></li>
+			    				<li><a href="javascript:;">洁面粉</a></li>
+			    				<li><a href="javascript:;">洁面啫喱</a></li>
+			    				<li style="color:#fa3778">
+			    					<a href="javascript:;">
+			    						泡沫洁面乳
+			    					</a>
+			    				</li>
+			    				
+			    			</ul>
+			    		</li>
+			    		<li>
+			    			<a href="javascript:;">洁面/磨砂</a>
+			    			<ul class="face_1">
+			    				<li><a href="javascript:;">洁面皂</a></li>
+			    				<li><a href="javascript:;">洁面粉</a></li>
+			    				<li><a href="javascript:;">洁面啫喱</a></li>
+			    				<li style="color:#fa3778">
+			    					<a href="javascript:;">
+			    						泡沫洁面乳
+			    					</a>
+			    				</li>
+			    				
+			    			</ul>
+			    		</li>
+			    	</ul>
+			    </li>
+			    
+			    <li class="hideLi">
+			    	<em>&#xe63c;</em>
+			    	<span id="type3">香水</span>
+			    	<em>&#xe612;</em>
+			    	<ul class="face" style="height:100px;"><!--display:block-->
+			    		<li>
+			    			<a href="javascript:;">洁面/磨砂</a>
+			    			<ul class="face_1">
+			    				<li><a href="javascript:;">洁面啫喱</a></li>
+			    				<li style="color:#fa3778">
+			    					<a href="javascript:;">
+			    						泡沫洁面乳
+			    					</a>
+			    				</li>
+			    				<li><a href="javascript:;">洁面皂</a></li>
+			    				<li><a href="javascript:;">洁面粉</a></li>
+			    			</ul>
+			    		</li>
+			    	</ul>
+			    </li>
+			    
+			    <li class="hideLi">
+			    	<em>&#xe67f;</em>
+			    	<span id="type4">健康美肌</span>
+			    	<em>&#xe612;</em>
+			    	<ul class="face" style="height:130px;"><!--display:block-->
+			    		<li>
+			    			<a href="javascript:;">洁面/磨砂</a>
+			    			<ul class="face_1">
+			    				
+			    				<li><a href="javascript:;">洁面粉</a></li>
+			    				<li><a href="javascript:;">洁面啫喱</a></li>
+			    				<li style="color:#fa3778">
+			    					<a href="javascript:;">
+			    						泡沫洁面乳
+			    					</a>
+			    				</li>
+			    				<li><a href="javascript:;">洁面皂</a></li>
+			    				<li><a href="javascript:;">洁面啫喱</a></li>
+			    			</ul>
+			    		</li>
+			    	</ul>
+			    </li>
+			    
+			    <li class="hideLi">
+			    	<em>&#xe641;</em>
+			    	<span id="type5">纤体美胸</span>
+			    	<em>&#xe612;</em>
+			    	<ul class="face" style="height:130px;"><!--display:block-->
+			    		<li>
+			    			<a href="javascript:;">洁面/磨砂</a>
+			    			<ul class="face_1">
+			    				
+			    				<li><a href="javascript:;">洁面粉</a></li>
+			    				<li><a href="javascript:;">洁面啫喱</a></li>
+			    				<li style="color:#fa3778">
+			    					<a href="javascript:;">
+			    						泡沫洁面乳
+			    					</a>
+			    				</li>
+			    				<li><a href="javascript:;">洁面皂</a></li>
+			    				<li><a href="javascript:;">洁面啫喱</a></li>
+			    			</ul>
+			    		</li>
+			    	</ul>
+			    </li>
+			    
+			    <li class="hideLi">
+			    	<em>&#xe603;</em>
+			    	<span id="type6">个人护理</span>
+			    	<em>&#xe612;</em>
+			    	<ul class="face" style="height:180px;"><!--display:block-->
+			    		<li>
+			    			<a href="javascript:;">洁面/磨砂</a>
+			    			<ul class="face_1">
+			    				<li><a href="javascript:;">洁面粉</a></li>
+			    				<li><a href="javascript:;">洁面粉</a></li>
+			    				<li><a href="javascript:;">洁面啫喱</a></li>
+			    				<li style="color:#fa3778">
+			    					<a href="javascript:;">
+			    						泡沫洁面乳
+			    					</a>
+			    				</li>
+			    				<li><a href="javascript:;">洁面皂</a></li>
+			    				<li><a href="javascript:;">洁面啫喱</a></li>
+			    			</ul>
+			    		</li>
+			    		<li>
+			    			<a href="javascript:;">洁面/磨砂</a>
+			    			<ul class="face_1">
+			    				<li><a href="javascript:;">洁面粉</a></li>
+			    				<li><a href="javascript:;">洁面啫喱</a></li>
+			    				<li style="color:#fa3778">
+			    					<a href="javascript:;">
+			    						泡沫洁面乳
+			    					</a>
+			    				</li>
+			    				<li><a href="javascript:;">洁面皂</a></li>
+			    			</ul>
+			    		</li>
+			    	</ul>
+			    </li>
+			    
+			    <li class="hideLi">
+			    	<em>&#xe62c;</em>
+			    	<span id="type7">男士专区</span>
+			    	<em>&#xe612;</em>
+			    	<ul class="face" style="height:100px;"><!--display:block-->
+						<li>
+			    			<a href="javascript:;">洁面/磨砂</a>
+			    			<ul class="face_1">
+			    				<li><a href="javascript:;">洁面粉</a></li>
+			    				<li><a href="javascript:;">洁面啫喱</a></li>
+			    				<li style="color:#fa3778">
+			    					<a href="javascript:;">
+			    						泡沫洁面乳
+			    					</a>
+			    				</li>
+			    				<li><a href="javascript:;">洁面皂</a></li>
+			    			</ul>
+			    		</li>
+			    	</ul>
+			    </li>
+			    
+			    <li class="hideLi">
+			    	<em>&#xe607;</em>
+			    	<span id="type8">孕婴护理</span>
+			    	<em>&#xe612;</em>
+			    	<ul class="face" style="height:120px;"><!--display:block-->
+						<li>
+			    			<a href="javascript:;">洁面/磨砂</a>
+			    			<ul class="face_1">
+			    				<li><a href="javascript:;">洁面粉</a></li>
+			    				<li><a href="javascript:;">洁面啫喱</a></li>
+			    				<li style="color:#fa3778">
+			    					<a href="javascript:;">
+			    						泡沫洁面乳
+			    					</a>
+			    				</li>
+			    				<li><a href="javascript:;">洁面粉</a></li>
+			    				<li><a href="javascript:;">洁面啫喱</a></li>
+			    				<li><a href="javascript:;">洁面皂</a></li>
+			    			</ul>
+			    		</li>
+			    		</li>
+			    	</ul>
+			    </li>
+			</ul>
+	<!-------------------------special_list----------------------->		
+			<ul id="special_list1">
+				<li>
+					<a href="javascript:;">
+						<img src="img/img-index/c769a85742b143ca2e0d52f595a5afc0a06f3c75.gif"/>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">闪电保税仓
+		
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">限时特卖&nbsp;<span id="hot">hot</span></a>
+				</li>
+				<li>
+					<a href="javascript:;">大牌底价购</a>
+				</li>
+				<li>
+					<a href="javascript:;">贵宾专享</a>
+				</li>
+				
+				<li>
+					<a href="javascript:;">所有品牌<em>&#xe612;</em>
+						<ul id="all_brand">
+							<li id="hot_b">热门品牌</li>
+							<div id="all_list">
+								<ul id="hot_brand">
+									<li><a href="">森田药妆   &ensp;&ensp;SAM TIN</a></li>
+									<li><a href="">希思黎    &ensp;&ensp;sesly</a></li>
+									<li><a href="">雅诗兰黛   &ensp;&ensp; Estee Lauder</a></li>
+									<li><a href="">森田药妆    &ensp;&ensp;SAM TIN</a></li>
+									<li><a href="">希思黎    &ensp;&ensp;sesly</a></li>
+									<li><a href="">森田药妆   &ensp;&ensp; SAM TIN</a></li>
+									<li><a href="">希思黎   &ensp;&ensp; sesly</a></li>
+									<li><a href="">雅诗兰黛  &ensp;&ensp;  Estee Lauder</a></li>
+								</ul>
+								<a id="chakan" href="javascript:;">
+									<h5>查看全部品牌</h5>
+								</a>
+							</div>
+							
+							<ul id="all_img">
+								<li style="border-top:0;">
+									<a href="javascript:;">
+										<img src="img/img-index/22278f2d654bbe9ca9ff1c3029792d99d91cbae1.jpg"/>
+									</a>
+								</li>
+					            <li style="border-top:0;">
+									<a href="javascript:;">
+										<img src="img/img-index/22278f2d654bbe9ca9ff1c3029792d99d91cbae1.jpg"/>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<img src="img/img-index/22278f2d654bbe9ca9ff1c3029792d99d91cbae1.jpg"/>
+									</a>
+								</li>
+					            <li>
+									<a href="javascript:;">
+										<img src="img/img-index/22278f2d654bbe9ca9ff1c3029792d99d91cbae1.jpg"/>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<img src="img/img-index/22278f2d654bbe9ca9ff1c3029792d99d91cbae1.jpg"/>
+									</a>
+								</li>
+					            <li>
+									<a href="javascript:;">
+										<img src="img/img-index/22278f2d654bbe9ca9ff1c3029792d99d91cbae1.jpg"/>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<img src="img/img-index/22278f2d654bbe9ca9ff1c3029792d99d91cbae1.jpg"/>
+									</a>
+								</li>
+					            <li>
+									<a href="javascript:;">
+										<img src="img/img-index/22278f2d654bbe9ca9ff1c3029792d99d91cbae1.jpg"/>
+									</a>
+								</li>
+							</ul>
+						</ul>
+					</a>
+				</li>
+		</ul>	
+	</div>
+	</div>
+		
+		<div id="sList">
+			<ul>
+				<li>
+					<a href="index.html">首页    /</a>
+				</li>
+				<li>
+					<a href="index.html">面部护肤  /</a>
+				</li>
+				<li>
+					<a href="index.html">面膜   /</a>
+				</li>
+				<li>
+					<a href="index.html">面膜贴   /</a>
+				</li>
+				<li>
+					<a href="index.html">面膜面部护肤面部护肤贴</a>
+				</li>
+			</ul>
+		</div>
+		
+		<!--*********main*********-->
+		<div id="main">
+			<div id="m_top">
+				<span><em>&#xe613;</em>   特卖进行中，完结时间倒数</span>
+				<div class="timer">
+					<span id="day">00</span> 天
+					<span id="hour">00</span> 时
+		            <span id="minute">00</span> 分
+		            <span id="second">00</span> 秒
+				</div>
+			</div>
+			
+			<div id="product">
+				<div id="Imgbox">
+					<ul id="Imgtop">
+						<li id="proImg1">
+							<div id="discount">5.6折</div>
+							<div id="fdj" class="small-pic">
+								<span class="mark"></span>
+								<span class="float_layer"></span>
+								<img src="img/img-index/img-fdj.jpg"/>
+								
+							</div>
+							
+							<a href="_blank"><em>&#xe613;</em></a>
+							<div id="Kacro">
+								<img src="img/img-index/hanguo.jpg"/>
+								<span>韩国品牌</span>
+							</div>
+							
+						</li>
+						
+						<li id="proImg1">
+							<div id="discount">5.6折</div>
+							<div id="fdj" class="small-pic">
+								<span class="mark"></span>
+								<span class="float_layer"></span>
+								<img src="img/img-index/img-fdj.jpg"/>
+								
+							</div>
+							<a href="_blank"><em>&#xe613;</em></a>
+							<div id="Kacro">
+								<img src="img/img-index/hanguo.jpg"/>
+								<span>韩国品牌</span>
+							</div>
+							
+						</li>
+						<li id="proImg1">
+							<div id="discount">5.6折</div>
+							<div id="fdj" class="small-pic">
+								<span class="mark"></span>
+								<span class="float_layer"></span>
+								<img src="img/img-index/img-fdj.jpg"/>
+								
+							</div>
+							<a href="_blank"><em>&#xe613;</em></a>
+							<div id="Kacro">
+								<img src="img/img-index/hanguo.jpg"/>
+								<span>韩国品牌</span>
+							</div>
+							
+						</li>
+						<li id="proImg1">
+							<div id="discount">5.6折</div>
+							<div id="fdj" class="small-pic">
+								<span class="mark"></span>
+								<span class="float_layer"></span>
+								<img src="img/img-index/img-fdj.jpg"/>
+							</div>
+							<a href="_blank"><em>&#xe613;</em></a>
+							<div id="Kacro">
+								<img src="img/img-index/hanguo.jpg"/>
+								<span>韩国品牌</span>
+							</div>
+							
+						</li>
+					
+						
+					</ul>
+					<div id="Imgbottom">
+						<ul id="small_ul">
+							
+							<li><img src="img/img-index/img-fdj.jpg"/></li>
+							<li><img src="img/img-index/img-fdj.jpg"/></li>
+							<li><img src="img/img-index/img-fdj.jpg"/></li>
+							<li><img src="img/img-index/img-fdj.jpg"/></li>
+							
+						</ul>
+					</div>
+				</div>
+				<div class="bigpic">
+					<img src="img/img-index/img-fdj.jpg"/>
+				</div>
+				<div id="proWord">
+					<div id="proWord1">
+						<p>"Curél 珂润润浸保湿滋养乳霜，蕴含「润浸保湿Ceramide
+							功能成分」及桉树精华，能深入渗透至肌肤角质层，
+							让肌肤回复高密度滋润状态，感觉柔滑富弹性 
+						</p>
+						<div>
+							<span>香港特快直达</span>
+							<span>零扣关</span>
+							<span>包税</span>
+							<i>珂润 <br>
+								润浸保湿滋养乳霜  (40克)  </i>
+						</div>
+						<ul>
+							<li><a href="javascript:;">保湿</a></li>
+							<li><a href="javascript:;">滋润</a></li>
+							<li><a href="javascript:;">抗敏感</a></li>
+						</ul>
+					</div>
+					<div id="proWord2">
+						<div>
+							<span>配   送</span>
+							<i>香港发货，香港直送时间为3-10个工作天</i>
+						</div>
+						<div>
+							<span>运  费</span>
+							<i id="i3">
+								<select id="sel">
+									<option >满288免运费</option>
+								</select>
+								<div id="opt">
+									满288免运费满288满288,免运费免运费满288免运费,满288免运费
+								</div>
+							</i>
+						</div>
+						<div>
+							<span>配  送</span>
+							<i><em>本商品包税，无需再额外缴纳。</em>如有疑问，请联系客服咨询。</i>
+						</div>
+						<div>
+							<span>服   务</span>
+							<i>30日退换   &nbsp;    &nbsp;  保证正品     &nbsp;   &nbsp;    保障价格承诺</i>
+						</div>
+					</div>
+					<div id="proWord3">
+						<div id="divp1">数量：
+							<p>
+								<span>-</span>
+								<span style="background:0">1</span>
+								<span>+</span>
+							</p>
+						</div>
+						<div id="divp2">
+							<span id="divp2-1">特卖价</span>
+							<span id="divp2-2">￥55.0</span>
+							<span id="divp2-3">市场价：￥98.0</span>
+						</div>
+						<div id="divp3">
+							<input type="button" value="立即抢购" />
+							<div id="divimg">
+								<input type="button" value="扫扫加入购物车" />
+								<img src="img/img-index/deb092788153cdc8e38fc6089b36561fd55e495d.jpg"/>
+							</div>
+							
+						</div>
+						<div id="divp4">
+							评  分   <span>★  ★  ★  ★  ☆</span> (90人评价)
+						</div>
+						<div id="divp5">
+							<a href="javascript:;"><em>&#xe613;</em> 收 藏</a>
+							<div id="share">
+								<span>豆瓣网</span>
+								<span>QQ空间</span>
+								<span>人人网</span>
+								<span>微博</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<!---------------猜你喜欢--------------->
+		<h4 id="gussH4">猜您喜欢</h4>
+		<ul id="guss">
+			<li>
+				<a href="javascript:;">
+					<dl>
+						<dt>
+							<img src="img/img-res/111.jpg"/>
+							<div id="gussMark"></div>
+						</dt>
+						<dd> Curél珂润滋集结桉树精华养乳霜 180ml</dd>
+					</dl>
+				</a>
+				<p>￥179.00</p>
+				
+			</li>
+			<li>
+				<a href="javascript:;">
+					<dl>
+						<dt>
+							<img src="img/img-res/222.jpg"/>
+							<div id="gussMark"></div>
+						</dt>
+						<dd> Curél珂润滋集结桉树精华养乳霜 180ml</dd>
+					</dl>
+				</a>
+				<p>￥179.00</p>
+				
+			</li>
+			<li>
+				<a href="javascript:;">
+					<dl>
+						<dt>
+							<img src="img/img-res/333.jpg"/>
+							<div id="gussMark"></div>
+						</dt>
+						<dd> Curél珂润滋集结桉树精华养乳霜 180ml</dd>
+					</dl>
+				</a>
+				<p>￥179.00</p>
+				
+			</li>
+			<li>
+				<a href="javascript:;">
+					<dl>
+						<dt>
+							<img src="img/img-res/444.jpg"/>
+							<div id="gussMark"></div>
+						</dt>
+						<dd> Curél珂润滋集结桉树精华养乳霜 180ml</dd>
+					</dl>
+				</a>
+				<p>￥179.00</p>
+				
+			</li>
+			<li>
+				<a href="javascript:;">
+					<dl>
+						<dt>
+							<img src="img/img-res/555.jpg"/>
+							<div id="gussMark"></div>
+						</dt>
+						<dd> Curél珂润滋集结桉树精华养乳霜 180ml</dd>
+					</dl>
+				</a>
+				<p>￥179.00</p>
+				
+			</li>
+		</ul>
+		
+		<ul id="scan">
+			<h3>浏览记录</h3>
+			<li>
+				<a href="javascript:;">
+					<img src="img/img-res/111.jpg"/>
+					<div id="scanWord">
+						<span>香港特快直送</span>
+						<span>零关扣</span>
+						<span>包税</span>
+						<span>泰国蕾丝</span>
+						<span>泰国蕾丝状</span>
+						<div id="scanPrice">
+							<span>￥59</span>
+							<span>￥109</span>
+						</div>
+					</div>
+					
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<img src="img/img-res/111.jpg"/>
+					<div id="scanWord">
+						<span>香港特快直送</span>
+						<span>零关扣</span>
+						<span>包税</span>
+						<span>泰国蕾丝</span>
+						<span>泰国蕾丝状</span>
+						<div id="scanPrice">
+							<span>￥59</span>
+							<span>￥109</span>
+						</div>
+					</div>
+					
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<img src="img/img-res/111.jpg"/>
+					<div id="scanWord">
+						<span>香港特快直送</span>
+						<span>零关扣</span>
+						<span>包税</span>
+						<span>泰国蕾丝</span>
+						<span>泰国蕾丝状</span>
+						<div id="scanPrice">
+							<span>￥59</span>
+							<span>￥109</span>
+						</div>
+					</div>
+					
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<img src="img/img-res/111.jpg"/>
+					<div id="scanWord">
+						<span>香港特快直送</span>
+						<span>零关扣</span>
+						<span>包税</span>
+						<span>泰国蕾丝</span>
+						<span>泰国蕾丝状</span>
+						<div id="scanPrice">
+							<span>￥59</span>
+							<span>￥109</span>
+						</div>
+					</div>
+					
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<img src="img/img-res/111.jpg"/>
+					<div id="scanWord">
+						<span>香港特快直送</span>
+						<span>零关扣</span>
+						<span>包税</span>
+						<span>泰国蕾丝</span>
+						<span>泰国蕾丝状</span>
+						<div id="scanPrice">
+							<span>￥59</span>
+							<span>￥109</span>
+						</div>
+					</div>
+					
+				</a>
+			</li>
+		</ul>
+		
+		<!---------------楼梯横向--------------->
+		<div id="SDR">
+			<div id="loutih">
+				<span>商品参数</span>
+				<span>商品详情</span>
+				<span>用户评价</span>
+				<em>55.0</em>
+				<input type="button" name="btnL" id="btnL" value="加入购物车" />
+			</div>
+			
+			<div id="specs">
+				<div id="specs1">
+					商品参数
+					<span>
+						Specs<hr />
+					</span>
+				</div>
+				
+				<ul id="specsWord">
+					<li>
+						<span>商品编号： </span>
+						<span>108667003001</span>
+					</li>
+					<li>
+						<span>商品品牌：</span>
+						<span>SWAGGER</span>
+					</li>
+					<li>
+						<span>商品名称：</span>
+						<span>超强保湿面霜</span>
+					</li>
+					<li>
+						<span>商品规格：</span>
+						<span>50毫升</span>
+					</li>
+				</ul>
+			</div>
+			
+			<div id="details">
+				<div id="specs1">
+					商品详情
+					<span>
+						Specs<hr />
+					</span>
+				</div>
+				<div id="detailsWord">
+					<div id="details1">
+						<h4>产品介绍</h4>
+						<h5>【swagger超强保湿面霜】 (50毫升)</h5>
+						<p>一罐面霜即可撃退暗哑、缺水问题，源源注入水份与活力，助你展示清爽的男士魅力！超强保湿面霜配方温和，适合任何肌肤使用。配方蕴含褐藻、榆树根等植物精萃，有助快速补水，建立保护层并锁住水份，长时间维持水油平衡，达致柔软肌肤、高效保湿、镇静纾缓、提亮肤色的功效，焕发自然活力！</p>
+					</div>
+					<div id="details2">
+						<p>商品特点:</p>
+						<p>蕴含植物精萃，包括褐藻、榆树根等，以大自然的力量，有效改善及镇静肌肤。</p>
+						<p>面霜为凝胶质地，清爽怡人，易于涂抹及吸收，摆脱黏腻感。</p>
+						<p>专门为男士设计的包装简单、具时尚品味，让你享受不一样的视觉、嗅觉及触觉体验。</p>
+					</div>
+					
+					<div id="details3">
+						<p>成分:</p>
+						<p>褐藻：镇静及提亮肌肤，焕发光泽</p>
+						<p>榆树根：柔软肌肤，令肤质更光滑</p>
+					</div>
+					
+					<div id="details4">
+						<p>使用方法：</p>
+						<p>洁肤后，取适当份量，均匀涂抹于全面。</p>
+					</div>
+					
+				</div>
+			</div>
+			
+			<div id="reviews">
+				<div id="specs1">
+					用户评价
+					<span>
+						Reviews<hr />
+					</span>
+				</div>
+				<div id="star">
+					<span>5.0/5</span>
+					<span>★ ★ ★ ★ ★</span>
+				</div>
+				
+				<div id="pingjia">
+					<div id="pjPic">
+						<h3>用户</h3>
+						<h4>VIP</h4>
+						<h5>佚名</h5>
+						<p>混合性偏干皮肤</p>
+					</div>
+					
+					<div id="pjWord">
+						<div id="star1">
+							<span>很赞</span>
+							评分 <span>★ ★ ★ ★ ★</span>
+						</div>
+						<p>强烈推荐  性价比高   </p>
+						<p style="font-size:14px;">2018年04月12日</p>
+					</div>
+				</div>
+			</div>
+		</div>	
+		
+		<div id="bottom_wrap">
+			<div id="bottom">
+				<ul class="air">
+					<li>
+						<img src="img/img-index/img1.jpg"/>
+						<dl>
+							<dt>香港特快直达</dt>
+							<dd>报税零扣关&nbsp;￥288包邮</dd>
+						</dl>
+					</li>
+					
+					<li>
+						<img src="img/img-index/img2.jpg"/>
+						<dl>
+							<dt>正品保证</dt>
+							<dd>专注美妆护肤40年</dd>
+						</dl>
+					</li>
+					<li>
+						<img src="img/img-index/img3.jpg"/>
+						<dl>
+							<dt>保税仓直送</dt>
+							<dd>包税零扣关 &nbsp;¥168免邮</dd>
+						</dl>
+					</li>
+					
+					<li>
+						<img src="img/img-index/img4.jpg"/>
+						<dl>
+							<dt>30天退换保证</dt>
+							<dd>为您提供售后无忧保障</dd>
+						</dl>
+					</li>
+					<li style="margin-right:0;">
+						<img src="img/img-index/img5.jpg"/>
+						<dl>
+							<dt>香港上市</dt>
+							<dd>股票代码 HK00178</dd>
+						</dl>
+					</li>
+					
+					
+				</ul>
+			
+				<div id="Bot_list">
+					<ul class="Bottom_list">
+						<li><h5>新手上路</h5><li>
+						<li><a href="javascript:;">新手上路</a></li>
+						<li><a href="javascript:;">新手上路</a></li>
+						<li><a href="javascript:;">新手上路</a></li>
+						<li><a href="javascript:;">新手上路</a></li>
+						<li><a href="javascript:;">新手上路</a></li>
+					</ul>
+					
+					<ul class="Bottom_list">
+						<li><h5>新手上路</h5><li>
+						<li><a href="javascript:;">新手上路</a></li>
+						<li><a href="javascript:;">新手上路</a></li>
+						<li><a href="javascript:;">新手上路</a></li>
+						<li><a href="javascript:;">新手上路</a></li>
+					</ul>
+					
+					<ul class="Bottom_list">
+						<li><h5>新手上路</h5><li>
+						<li><a href="javascript:;">新手上路</a></li>
+						<li><a href="javascript:;">新手上路</a></li>
+						<li><a href="javascript:;">新手上路</a></li>
+					</ul>
+					
+					<ul class="Bottom_list">
+						<li><h5>新手上路</h5><li>
+						<li><a href="javascript:;">新手上路</a></li>
+						<li><a href="javascript:;">新手上路</a></li>
+					</ul>
+					
+					<ul class="Bottom_list">
+						<li><h5>新手上路</h5><li>
+						<li><a href="javascript:;">新手上路</a></li>
+						<li><a href="javascript:;">新手上路</a></li>
+						<li><a href="javascript:;">新手上路</a></li>
+					</ul>
+					
+					
+				</div>
+			
+				<div id="Bcode">
+					<dl>
+						<dt>
+							<img src="img/img-index/7191af464a49d84fa95c39361cfdd5ef993347fd.jpg"/>
+						</dt>
+						<dd> 
+							<p>莎莎网官方微博</p>
+							<span>@莎莎网</span>
+					    </dd>
+					</dl>
+					
+					<dl style="margin-right:0;">
+						<dt>
+							<img src="img/img-index/92916c648aa5518f6c52210ff2e8418eb3c750a0.jpg"/>
+						</dt>
+						<dd> 
+							<p>莎莎网官方微信</p>
+							<span>@莎莎网</span>
+					    </dd>
+					</dl>
+				</div>
+				
+				<a class="Bimg"href="javascript:;">
+					<img src="img/img-index/2ba94eca9ab1e31bff8edcc9a4d60e764f051972.jpg"/>
+				</a>
+			</div>
+		</div>
+		
+		<div id="footer_wrap">
+			<div id="footer">
+				<ul>
+					<li><a href="javascript:;">关于莎莎&nbsp;&nbsp; |</a></li>
+					<li>
+						<a href="javascript:;">&nbsp;&nbsp;关于莎莎&nbsp;&nbsp; |</a> 
+					</li>
+					<li>
+						<a href="javascript:;">&nbsp;&nbsp;关于莎莎&nbsp;&nbsp; |</a> 
+					</li>
+					<li>
+						<a href="javascript:;">&nbsp;&nbsp;关于莎莎&nbsp;&nbsp; |</a> 
+					</li>
+					<li>
+						<a href="javascript:;">&nbsp;&nbsp;关于莎莎&nbsp;&nbsp; |</a> 
+					</li>
+					<li>
+						<a href="javascript:;">&nbsp;&nbsp;关于莎莎&nbsp;&nbsp; |</a> 
+					</li>
+					<li>
+						<a href="javascript:;">&nbsp;&nbsp;关于莎莎&nbsp;&nbsp; |</a> 
+					</li>
+					<li>
+						<a href="javascript:;">&nbsp;&nbsp;关于莎莎&nbsp;&nbsp; |</a> 
+					</li>
+					<li>
+						<a href="javascript:;">&nbsp;&nbsp;关于莎莎&nbsp;&nbsp; |</a> 
+					</li>
+					<li>
+						<a href="javascript:;">&nbsp;&nbsp;关于莎莎</a> 
+					</li>
+				</ul><br>
+				<p>Copyright 2000-2018 Sa Sa dot Com Limited 版权所有莎莎国际控股有限公司成员 </p>
+			</div>
+		</div>
+			
+	</body>
+	<script type="text/javascript">
+		$("#type_list1 >li").each(function(index,value){
+		$(value).hover(function(){
+			$(value).css({"background":"#fff","color":"#000"});
+			$('#tl_1').css({"background":"#333333","color":"#fff"});
+			$(value).find(".face").css({"display":"block"});
+			
+			
+			$(".face > li").each(function(index,value){
+				$(value).find('a').hover(function(){
+					$(value).find('a').css({"color":"#fa3778"});
+					$(value).find('ul li a').css({"color":"#ADADAD"});
+				},function(){
+					$(value).find('a').css({"color":"#4f484a"});
+					$(value).find('ul li a').css({"color":"#ADADAD"});
+					$(".face_1 > li").each(function(index,value){
+						$(value).find('a').hover(function(){
+							$(this).css({"color":"#fa3778"});
+						},function(){
+							$(this).css({"color":"#ADADAD"});
+						})
+					})
+				})
+			})
+			
+		},function(){
+			$(value).css({"background":"#fa3778","color":"#fff"});
+			$('#tl_1').css({"background":"#333333","color":"#fff"});
+			$(value).find(".face").css({"display":"none"});
+		})
+	})
+		
+	$("#type_list1").hover(function(){
+		$(".hideLi").css({"display":"block"});
+		
+	},function(){
+		$(".hideLi").css({"display":"none"});
+	})
+	</script>
+
+	<script type="text/javascript">
+		//香港特快直达
+		$("#special_list1 > li > a").hover(function(){
+			$(this).css({"color":"#fa3778"});
+		
+			$("#special_list1 > li").last().hover(function(){
+				$("#all_brand").css({"display":"block"});
+			},function(){
+				$("#all_brand").css({"display":"none"});
+			})
+		},function(){
+			$(this).css({"color":""});
+		})
+
+	</script>
+	
+	<!--倒计时-->
+	<script type="text/javascript">
+        var timer=null;
+        var day = document.getElementById("day");
+        var hour = document.getElementById("hour");
+        var minute = document.getElementById("minute");
+        var second = document.getElementById("second");
+        timer=setInterval(function(){
+            var date = new Date(); 
+                var now = date.getTime(); 
+            
+                //设置截止时间  
+                var str="2018/12/15 08:55:50";
+                
+                var endDate = new Date(str); 
+                var end = endDate.getTime(); 
+                
+                //时间差  
+                var leftTime = end-now; 
+                
+                //定义变量 保存倒计时的时间  
+            
+                if (leftTime>=0) {  
+                var  nDay = parseInt(leftTime/1000/60/60/24);  
+                var nHour = parseInt(leftTime/1000/60/60);  
+                var  nMinute = parseInt(leftTime/1000/60%60);  
+                var nSecond = parseInt(leftTime/1000%60);
+
+                if(nDay < 10){
+                 nDay = "0" + nDay;
+                }  
+                if(nHour < 10){
+                nHour = "0" + nHour;
+                }
+                if(nMinute < 10){
+                    nMinute = "0" + nMinute;
+                }
+                if(nSecond < 10){
+                    nSecond = "0" + nSecond;
+                }
+                                
+                } else{
+                    clearInterval(countTime)
+                    return timer.innerHTML="活动结束，请下次早点来"
+
+                } 
+            //将倒计时赋值到div中  
+            	
+            	
+                day.innerHTML = nDay;
+                hour.innerHTML = nHour; 
+                minute.innerHTML = nMinute;
+                second.innerHTML = nSecond;  
+
+          
+        },1000)
+
+    </script>
+
+	<!--轮播图-->
+	<script src="js/sport.js"></script>
+	
+	<script type="text/javascript">
+			window.onload = function(){
+				//1.获取大盒子
+				const oBigBox = document.getElementById("Imgbox");
+				//2.获取上半部
+				const oTop = document.getElementById("Imgtop");
+				
+				//7.获取大图
+				const oBigPic = oTop.getElementsByTagName('li');
+				//8.获取下半部
+				const oBottom = document.getElementById("Imgbottom");
+				//9.获取小图UL
+				const oSmallUl = document.getElementById("small_ul");
+				//10.获取小图
+				const oSmallPic = oBottom.getElementsByTagName('li');
+				//11.设置小图UL的宽
+				oSmallUl.style.width = oSmallPic.length * oSmallPic[0].offsetWidth + 'px';
+
+				//16.设置控制图片轮播的下标值
+				let indexA = 0;
+				//17.改变层级的变量
+				let zIndex = 1;
+				//18.计时器变量
+				let timer = null;
+				slider();
+				
+				
+				//21.给小图添加事件
+				for(let i = 0,len = oSmallPic.length;i < len;i ++){
+					//移入事件
+					oSmallPic[i].onmouseenter = function(){
+						sport(this,{opacity : 100});
+					}
+					//移出事件
+					oSmallPic[i].onmouseleave = function(){
+						if(i != indexA){
+							sport(this,{opacity : 50})
+						}
+					}
+					//点击事件
+					oSmallPic[i].onclick = function(){
+						indexA = i;
+						slider();
+					}
+				}
+				
+				//22.轮播函数
+				function slider(){
+					//大图轮播
+					oBigPic[indexA].style.zIndex = ++ zIndex;
+					//小图轮播
+					if(indexA == 0){
+						sport(oSmallUl,{left : 0});
+					}
+
+					//初始化小图的透明度
+					//所有小图透明度为50
+					for(let i = 0,len = oSmallPic.length;i < len;i ++){
+						sport(oSmallPic[i],{opacity : 50})
+					}
+					//当前小图透明度为100
+					sport(oSmallPic[indexA],{opacity : 100});
+				}
+				
+			}
+		</script>
+	
+	<script type="text/javascript">
+		$("#divimg input").hover(function(){
+			$("#divimg img").css({"display":"block"});
+		},function(){
+			$("#divimg img").css({"display":"none"});
+		})
+	</script>
+
+	<script type="text/javascript">
+		//放大镜
+		//遮罩移动事件
+		$('.small-pic').hover(function(){
+			$('.float_layer').css({'display':'block'});
+			$('.bigpic').css({'display':'block'});
+			$('.small-pic').bind("mousemove",function(){
+				var e = e||event;
+					//获取鼠标当前位置
+				var x = e.pageX;
+				var y = e.pageY;
+					//获取原图窗口距离文档的偏移位置
+				var sx = $('.small-pic').offset().left;
+				var sy = $('.small-pic').offset().top;
+						//计算鼠标的相对位置（相对于原图窗口的偏移量）
+				var mx = x - sx;
+				var my = y - sy;
+				console.log(mx,my);
+					//获取小框框的宽和高
+				var smallx =$('.float_layer').width()/2;
+				var smally = $('.float_layer').height() / 2;
+				$('.float_layer').css({"left":mx - smallx +'px',"top":my - smally+ 'px'});
+				//获取小框的偏移距离
+				var lw = $('.float_layer').position().left;
+				var lh = $('.float_layer').position().top;
+				//边界
+				// 判断边界（小框框只能在原图窗口范围内移动）
+			    var maxW=$('.small-pic').width() - $('.float_layer').width();
+			    var maxH=$('.small-pic').height() - $('.float_layer').height();
+			    // 左边界
+			    if(lw<=0){$('.float_layer').css('left','0px');}
+			    // 右边界
+			    if(lw>=maxW){
+			        $('.float_layer').css('left',maxW+'px');
+			    }
+			    // 上边界
+			    if(lh<=0){$('.float_layer').css('top','0px');}
+			    // 下边界
+			    if(lh>=maxH){
+			        $('.float_layer').css('top',maxH+'px');
+			    }
+			// 获取小框框的偏移位置
+				var lw = $('.float_layer').position().left;
+				var lh = $('.float_layer').position().top;
+				console.log(lw);
+				
+			// 计算鼠标在小图里的位置  *2.5计算大图移动的比例
+			    var newX=lw*1.9;
+			    var newY=lh*1.9;
+				$('.bigpic img').css({left:-newX+'px',top:-newY+'px'});
+			})
+			$(".mark").mouseup(function(){
+				$(document).off("mousemove");
+			})
+		},function(){
+			$('.float_layer').css('display','none');
+			$('.bigpic').css('display','none');
+		})
+		
+		
+		
+//		//绑定鼠标离开原图窗口事件
+//		$('.mark').mouseleave(function(){
+//		        $('.bigpic').css('display','none');
+//		        $('.float_layer').css('display','none');
+//		})
+
+	</script>
+
+</html>

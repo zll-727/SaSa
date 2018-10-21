@@ -1,0 +1,175 @@
+body{ font-family:"微软雅黑";background:#fff;}
+
+#logo{
+	width:1028px;
+	height:50px;
+	margin:20px auto;
+}
+#main{
+	width:1028px;
+	height:580px;
+	background:#fff;
+	margin:40px auto 0;
+	position: relative;
+}
+#main img{
+	position:absolute;
+	top:120px;
+	left:0;
+}
+form{
+	position:absolute;
+	top:0;
+	right:6px;
+	width:422px;
+	height:572px;
+	border:1px solid #ddd;
+	box-shadow:10px 10px 5px #F2F2F2;
+	padding:36px;
+	box-sizing: border-box;
+}
+
+form #res1{
+	width:350px;
+	height:22px;
+	margin-bottom:40px;
+}
+
+#res1 h3{
+	font-size:22px;
+	float:left;
+	margin-right:105px;
+}
+#have{
+	float:left;
+	line-height:22px;
+}
+#have a{ 
+	color:#ee407f;
+}
+
+form input{
+	width:350px;
+	height:35px;
+	border:1px solid #ccc;
+	font-size:12px;
+	text-indent: 10px;
+	position:relative;
+}
+form input:hover{
+	border:1px solid  rgba(185,0,0,0.3);
+}
+
+form >p{
+	opacity:0;
+}
+form >p >em{
+	color:red;
+}
+
+#em2{
+	width:20px;
+	height:20px;
+	background:red;
+	color:#fff;
+	position:absolute;
+	top:165px;
+	right:45px;
+	border-radius: 50%;
+	font-size:12px;
+	text-align:center;
+	line-height:20px;
+	opacity:0;
+}
+#utest{
+	width:130px;
+	float:left;
+}
+#test{
+	width:80px;
+	height:37px;
+	border:0;
+	background:pink;
+	float:left;
+	margin:0 5px;
+	margin-bottom:25px;
+	text-align:center;
+	line-height:38px;
+	font-size:24px;
+}
+#testBtn{
+	line-height:35px;
+	font-style: initial;
+	font-size:12px;
+	margin-bottom:25px;
+}
+#uEmail{
+	width:130px;
+	float:left;
+	margin-bottom: 25px;
+}
+#Ebtn{
+	width:150px;
+	height:35px;
+	border:0;
+	background:#ee407f;
+	margin-left:65px;
+	color:#fff;
+	font-size:14px;
+	margin-bottom: 25px;
+	cursor:pointer;
+}
+#agr{
+	width:350px;
+	height:30px;
+	background:#fff;
+	position:absolute;
+	top:420px;
+	left:35px;
+}
+
+#agree{
+	display:block;
+	width:15px;
+	height:15px;
+	background:#fff;
+	position:absolute;
+	top:0;
+	left:0;
+	margin-right:10px;
+}
+#dis{
+	width:350px;
+	height:30px;
+	background:#fff;
+	position:absolute;
+	top:460px;
+	left:35px;
+}
+
+#disagree{
+	display:block;
+	width:15px;
+	height:15px;
+	background:#fff;
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+#agr,#dis span{
+	padding:0 15px;
+}
+
+#agree1 a{
+	color:#ec3e7d;
+}
+
+#subBtn{
+	background:#ec3e7d;
+	border:0;
+	color:#fff;
+	font-size:16px;
+	margin-top:90px;
+	cursor: pointer;
+}

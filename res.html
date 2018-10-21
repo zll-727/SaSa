@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="css/res.css"/>
+		
+		<script src="js/jquery-1.11.3.js"></script>
+		
+		<script src="js/cookie.js"></script>
+		
+	</head>
+	<body>
+		<div id="header_wrap">
+			<header>
+				<!--欢迎---登陆---注册-->
+				<div id="h-left" class="h-left">
+					<span id="welcome">欢迎光临莎莎网！</span>
+					<div id="rl">
+						<a href="login.html">登录</a> 或
+						<a href="res.html">免费注册</a>
+					</div>
+				</div>
+				
+				<!--选项列表-->
+				<ul id="h-right" class="h-right">
+					<li id="uCount">
+						<a href="javascript:;">
+							<em id="user">&#xe60b;</em>
+							我的账户<em id="jt">&#xe612;</em>
+							<ul id="ulist">
+								<li>我的订单</li>
+								<li>我的积分</li>
+								<li>我的优惠券</li>
+								<li>我的收藏</li>
+								<li>我的评价</li>
+							</ul>
+						</a>
+					</li>
+					
+					<li id="ushopCar">
+						<a href="javascript:;">
+							<em id="sp">&#xe60f;</em>我的购物车
+						</a>
+						<div id="shopcar">
+							<p>购物车里还没有商品，</p>
+							<p>快去挑选商品吧</p>
+						</div>
+					</li>
+					
+					<li>
+						<a href="javascript:;">
+							<em id="collect">&#xe613;</em>我的收藏
+						</a>
+					</li>
+					
+					<li>
+						<a href="javascript:;">我的站内信</a>
+					</li>
+					
+					<li>
+						<a href="javascript:;">积分中心</a>
+					</li>
+					
+					<li>
+						<a href="javascript:;">Global site</a>
+					</li>
+					
+					<li id="care">
+						<a href="#javascript:;">关注我们</a>
+						<a href="#">
+							<span id="wb">&#xe61a;</span>
+						</a>
+						<img id="wbcode" src="img/img-index/7191af464a49d84fa95c39361cfdd5ef993347fd.jpg"/>
+						<a href="#">
+							<span id="wx">&#xe619;</span>
+						</a>
+						<img id="wxcode" src="img/img-index/d9543ebd87df62d78670356c875833c77b4e4a41.jpg"/>
+					</li>
+				</ul>
+			</header>
+			</div>
+		
+		<div id="logo">
+			<a href="index.html">
+				<img src="img/img-res/logo.png"/>
+			</a>
+		</div>
+		
+		<div id="main">
+			<img src="img/img-res/res.jpg"/>
+			<form>
+				<div id="res1">
+					<h3>注册账号</h3>
+					<div id="have">已有莎莎网帐号？
+						<a href="login.html">立即登录</a>
+					</div>
+				</div>
+				<input type="text" name="unum" id="unum" placeholder="请输入邮箱/手机号，最少五个字符" />
+				<p id="p1"><em>!</em> 请输入邮箱或手机号码 </p>
+				
+				<input style="margin-bottom:25px;" type="password" name="upwd" id="upwd" placeholder="请输入密码6-16位字母和数字的组合" />
+				<em id='em2'>差</em>
+				
+				<input type="password" name="urep" id="urep" placeholder="再次填写密码" />
+				<p id="p2"><em>!</em> 密码不一致 </p>
+				
+				<input type="text" name="utest" id="utest" placeholder="填写验证码" />
+				
+				<a href="javascript:;" id="test"></a>
+				
+				<a href="javascript:;" id="testBtn">看不清？换一张</a>
+				
+				<input type="text" name="uEmail" id="uEmail" placeholder="填写邮箱验证码" />
+				
+				<input type="button" name="Ebtn" id="Ebtn" value="获取邮箱验证码" />
+				
+				<div id="agr">
+					<input type="checkbox" name="agree" id="agree" value="" />
+					<span id="agree1">
+						已阅读及接受 <a href="#">使用条款</a> 及 <a href="#">私隐政策</a>
+					</span>
+				</div>	
+				
+				<div id="dis">
+					<input type="checkbox" name="disagree" id="disagree" value="" />
+					<span id="disagree1">
+						我不同意莎莎使用我的个人资料作直接促销
+					</span>
+				</div>
+				
+				<input type="button" id="subBtn" value="注册" />
+					
+			</form>
+		</div>
+
+	</body>
+	<script type="text/javascript">
+		//用户名获取焦点
+	var flagNum = null;
+	$("#unum").blur(function(){
+		var res1=/[\w]+@((126)|(163)|(qq))((\.com)|(\.cn))$/;
+		var res2 =  /^[\d]{11}$/;
+		
+		if( res1.test($('#unum').val()) || res2.test($("#unum").val()) ){
+			$('#p1').css({"opacity":0});
+			flagNum =  true;
+		}
+		else{
+			$('#p1').css({"opacity":1});
+			flagNum =  false;
+		}
+	})
+	
+	//密码获取焦点
+	var flagPwd = null;
+	$("#upwd").blur(function(){
+		CheckIntensity($("#upwd").val());
+	})
+	function CheckIntensity(pwd) {
+	    
+	    var m = 0;   
+	    //匹配数字
+	    if (/\d+/.test(pwd) ){
+	      m++;
+	    };
+	    //匹配字母
+	    if (/[A-Za-z]+/.test(pwd)) {     
+	      m++;
+	    };
+	    //匹配除数字字母外的特殊符号
+	    if (/[^0-9a-zA-Z]+/.test(pwd)) {      
+	      m++;
+	    };
+	     
+	    if (pwd.length <= 6) { m = 1; }
+	    if (pwd.length <= 0) { m = 0; }    
+	    switch (m) {
+	      case 1:
+	        $('#em2').css({"opacity":1,"background":"orange",});
+		    $("#em2").html("弱");
+			flagPwd = true;
+	        break;
+	      case 2:
+	        $('#em2').css({"opacity":1,"background":"green"});
+			$("#em2").html("中");
+			flagPwd = true;
+	        break;
+	      case 3:
+	        $('#em2').css({"opacity":1,"background":"skyblue"});
+			$("#em2").html("强");
+			flagPwd = true;
+			break;
+	    }
+	  }  
+	
+	//重复密码 
+	var flagRep = null;
+	$("#urep").blur(function(){
+		if($('#upwd').val() == $('#urep').val()){
+			$('#p2').css({"opacity":0});
+			flagRep = true;
+		}
+		else{
+			$('#p2').css({"opacity":1});
+			flagRep = false;
+		}
+	})
+	
+	
+	//点击获取验证码
+	yzm();
+	var flagTest = null;
+	
+	
+	$("#utest").blur(function(){
+		if($("#utest").val()== $("#test").html()){
+			flagTest = true;
+		}
+		else{
+			flagTest = false;
+		}
+	})
+
+	
+	$("#test").click(function(){
+		yzm();
+	})
+	
+	$("#testBtn").click(function(){
+		yzm();
+ 	})
+	function yzm(){
+		var num = rand(1000,9999);
+		var color = getColor();
+		$("#test").html(num).css({"background": color});
+	}
+	function rand(min,max){
+		return Math.round(Math.random()*(max-min)+min)
+	}
+	function getColor(){
+		var str="0123456789abcdef";
+		var color="#";
+		for(var i=1;i<=6; i++){
+			color+=str.charAt(rand(0,15));
+		}
+		return color;
+	}
+	
+	
+	//获取邮箱验证码
+	var flagEmail = null;
+	
+	$("#Ebtn").click(function(arr){
+		Eyzm();
+ 	})
+	function Eyzm(){
+		var num = rand(100000,999999);
+		var color = getColor();
+		$("#uEmail").val(num);
+	}
+	
+	$("#Ebtn").blur(function(){
+		if($("#uEamil").val() == $("#Ebtn").val()){
+			flagEmail = true;
+		}
+		else{
+			flagEmail = false;
+		}
+	})
+	var arr = [];
+	var brr = getCookie("unum");
+	if(brr.length != 0){
+		arr = brr;
+	}	
+	console.log(brr);
+	$("#subBtn").click(function(){
+		if( flagNum && flagPwd && flagRep){	
+			window.location.href="login.html";
+			var json = {
+				"unum" : $('#unum').val(),
+				"upwd" : $('#upwd').val()
+			}
+//			var uname = setCookie("unum",$('#unum').val(),1000);
+//			var uphone = setCookie("upwd",$('#upwd').val(),1000);
+//			alert(document.cookie);
+			arr.push(json);
+			setCookie("unum",JSON.stringify(arr),1000);			
+		}
+		else{
+			alert("注册失败，请重新注册");
+		}
+	})
+	</script>
+</html>

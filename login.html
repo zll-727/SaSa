@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="css/res.css"/>
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+		
+		
+	</head>
+	<body>
+		<div id="header_wrap">
+			<header>
+				<!--欢迎---登陆---注册-->
+				<div id="h-left" class="h-left">
+					<span id="welcome">欢迎光临莎莎网！</span>
+					<div id="rl">
+						<a href="login.html">登录</a> 或
+						<a href="res.html">免费注册</a>
+					</div>
+				</div>
+				
+				<!--选项列表-->
+				<ul id="h-right" class="h-right">
+					<li id="uCount">
+						<a href="javascript:;">
+							<em id="user">&#xe60b;</em>
+							我的账户<em id="jt">&#xe612;</em>
+							<ul id="ulist">
+								<li>我的订单</li>
+								<li>我的积分</li>
+								<li>我的优惠券</li>
+								<li>我的收藏</li>
+								<li>我的评价</li>
+							</ul>
+						</a>
+					</li>
+					
+					<li id="ushopCar">
+						<a href="javascript:;">
+							<em id="sp">&#xe60f;</em>我的购物车
+						</a>
+						<div id="shopcar">
+							<p>购物车里还没有商品，</p>
+							<p>快去挑选商品吧</p>
+						</div>
+					</li>
+					
+					<li>
+						<a href="javascript:;">
+							<em id="collect">&#xe613;</em>我的收藏
+						</a>
+					</li>
+					
+					<li>
+						<a href="javascript:;">我的站内信</a>
+					</li>
+					
+					<li>
+						<a href="javascript:;">积分中心</a>
+					</li>
+					
+					<li>
+						<a href="javascript:;">Global site</a>
+					</li>
+					
+					<li id="care">
+						<a href="#javascript:;">关注我们</a>
+						<a href="#">
+							<span id="wb">&#xe61a;</span>
+						</a>
+						<img id="wbcode" src="img/img-index/7191af464a49d84fa95c39361cfdd5ef993347fd.jpg"/>
+						<a href="#">
+							<span id="wx">&#xe619;</span>
+						</a>
+						<img id="wxcode" src="img/img-index/d9543ebd87df62d78670356c875833c77b4e4a41.jpg"/>
+					</li>
+				</ul>
+			</header>
+			</div>
+		
+		<div id="logo">
+			<a href="index.html">
+				<img src="img/img-res/logo.png"/>
+			</a>
+		</div>
+		
+		<div id="main">
+			<img src="img/img-res/login.jpg"/>
+			<form>
+				<div id="log1">
+					<h3>用户登陆</h3>
+					<div id="has">还没有莎莎网帐号？
+						<a href="res.html">立即注册</a>
+					</div>
+				</div>
+				<input type="text" name="unum" id="unum" placeholder="&#xe60b;邮箱/手机" />
+				
+				<input type="password" name="upwd" id="upwd" placeholder="&#xe613;填写密码" />
+				
+				
+				<input type="text" name="utest" id="utest" placeholder="填写图片验证码" />
+				
+				<a href="#" id="test"></a>
+				<a href="#" id="testBtn">看不清？换一张</a>
+				
+				
+				<div id="agr">
+					<input type="checkbox" name="agree" id="agree" value="" />
+					<span id="agree1">
+						记住我 <a href="#">忘记密码</a>
+					</span>
+				</div>	
+				<input type="button" id="subBtn" value="登陆" />
+					
+				<p>第三方账号登录</p>
+				<ul id="loginType">
+					<li id="qq">
+						<a href="#">QQ登录</a>
+					</li>
+					<li id="wb">
+						<a href="#">微博登录</a>
+					</li>
+					<li id="zfb">
+						<a href="#">支付宝登录</a>
+					</li>
+				</ul>
+			</form>
+		</div>
+			
+	</body>
+	<script src="js/jquery-1.11.3.js"></script>
+	<script src="js/require.js" data-main="js/index"></script>
+	<script src="js/cookie.js"></script>
+		
+	<script type="text/javascript">
+			yzm();
+			$("#test").click(function(){
+				yzm();
+			})
+			
+			$("#testBtn").click(function(){
+				yzm();
+		 	})
+			function yzm(){
+				var num = rand(1000,9999);
+				var color = getColor();
+				$("#test").html(num).css({"background": color});
+			}
+			function rand(min,max){
+				return Math.round(Math.random()*(max-min)+min)
+			}
+			function getColor(){
+				var str="0123456789abcdef";
+				var color="#";
+				for(var i=1;i<=6; i++){
+					color+=str.charAt(rand(0,15));
+				}
+				return color;
+			}
+		</script>
+
+	<script type="text/javascript">
+		var num = $('#unum').val();
+		var pwd = $('#upwd').val();
+		var test = $("#utest").val();
+		var test1 = $("#test").html();
+		
+		var crr = getCookie("unum");
+		console.log(crr);
+		$('#subBtn').click(function(){
+			//console.log($('#unum').val());
+			//console.log($('#upwd').val());
+			for(var i = 0,len = crr.length;i < len; i ++){
+				if(crr[i].unum == $('#unum').val()){
+					if(crr[i].upwd == $('#upwd').val()){
+						if($("#utest").val()== $("#test").html()){
+							window.location.href="index.html";
+						}
+						else{
+							alert("验证码错误！");
+						}
+						return ;
+					}
+					else{
+						alert("用户名或密码错误！");
+					}
+				}
+			}
+			
+		})
+	</script>
+
+
+</html>
